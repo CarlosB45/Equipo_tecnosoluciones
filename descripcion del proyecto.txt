@@ -1,7 +1,0 @@
-El proyecto a desarrollar es el análisis, diseño y construcción de una aplicación de software que permita controlar las ventas físicas y 
-virtuales de una empresa de manufactura con el objetivo de realizar el correspondiente seguimiento de inventario a través de la creación de 
-la interfaz para los usuarios comerciales los cuales realizarán la solicitud de pedido y en la otra interfaz permitirá el control de los inventarios.
-
-Para la creación, diseño e implementación de este proyecto  se aplicará el método ágil scrum en el cual cada integrante desarrollará un rol en específico.
-
-Me parece importante recalcar que, a través del uso de bases de datos relacionales podremos lograr una mayor fidelización del usuario: si integramos analítica de datos en las órdenes de compra hechas por los clientes, si tenemos sus datos de contacto (como celular y correo electrónico), tenemos la posibilidad de automatizar campañas de marketing y upselling que redunden en mayores beneficios para la empresa.
