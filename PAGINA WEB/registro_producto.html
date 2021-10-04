@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="Inventario"></span> <span>Administración de inventarios</span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="" class="active"><span class="home"></span>
+                    <span>Inicio</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="product"></span>
+                    <span>Productos</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="salesman"></span>
+                    <span>Comerciales</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="stock"></span>
+                    <span>Inventarios</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="sales"></span>
+                    <span>Registro de ventas</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="ordertraking"></span>
+                    <span>Seguimiento de ventas</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="users"></span>
+                    <span>Gestión de usuarios</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle"></label>
+                    <span class="las la-bars"></span>
+                </label> Inicio
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Busqueda" />
+            </div>
+            <div class="user-wrapper">
+                <img src="img/user.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+                <label class="labelform">Código del producto</label>
+                <input type="text" class="formcontrol" value="">
+                <label class="labelform">Nombre del producto</label>
+                <input type="text" class="formcontrol" value="">
+                <label class="labelform">Marca</label>
+                <input type="text" class="formcontrol" value="">
+                <label for="labelform">Referencia</label>
+                <input type="text" class="formcontrol" value="">
+                <label class="labelform">Valor unitario</label>
+                <input type="text" class="formcontrol" value="">
+                <label for="labelform">Nombre del proveedor</label>
+                <input type="text" class="formcontrol" value="">
+                <label for="labelform">Imagen del producto</label>
+                <input type="text" class="formcontrol" value="">
+                <label for="labelform">Localizacion</label>
+                <input type="text" class="formcontrol" value="">
+
+
+
+        </main>
+    </div>
+
+</body>
+
+</html>
