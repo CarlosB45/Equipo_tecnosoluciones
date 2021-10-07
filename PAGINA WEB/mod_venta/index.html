@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="Inventario"></span> <span>Ventas</span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="Registro de ventas" class="active"><span class="home"></span>
+                    <span>Consulta de ventas</span></a>
+                </li>
+                <li>
+                    <a href="Consulta de ventas"><span class="product"></span>
+                    <span>Registro de ventas</span></a>
+                </li>
+                <li>
+                    <a href="Modificación de ventas"><span class="salesman"></span>
+                    <span>Modificación de ventas</span></a>
+                </li>
+                <li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle"></label>
+                    <span class="las la-bars"></span>
+                </label> Inicio
+            </h2>
+            <div class="user-wrapper">
+                <img src="img/user.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cards">
+
+                <div class="card-productos">
+                    <div> 
+                        <center><h1>250</h1>
+                        <span>Número de productos vendidos</span></center>
+                    </div>
+                    <div>
+                        <span class="products"></span>
+                    </div>
+                </div>
+
+                <div class="card-ventas">
+                    <div>
+                        <center><h1>1.400 Millones</h1>
+                        <span>Total Ventas</span></center>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <center><h1>1.300.000</h1>
+                        <span>Numero de ventas</span></center>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tabla-->
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Seleccione periodo</h3>
+
+                            <button>Mostrar último periodo <span class="las la-arrow-right">
+                            </span></button>
+
+                            <button>Mostrar periodo en curso <span class="las la-arrow-right">
+                            </span></button>
+                        </div>
+
+                        <div>
+                            
+                            <form>
+                                <br>
+                                <p>Año: <input type="text"
+                                year="año" size="30"
+                                placeholder="Ingrese el año a consultar (AAAA)"></p><br>
+                                <p>Mes: <input type="text"
+                                month="mes" size="30"
+                                placeholder="Ingrese el mes a consultar (MM)"></p>
+                            </form>
+                    
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="productos">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Ranking productos mes</h3>
+
+                            
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="avatars/1.png" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Computador Gamer</h4>
+                                        <small>6500 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="lab la-whatsapp"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="avatars/2.png" 40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>Computador HP</h4>
+                                        <small>6350 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            <div class="customer ">
+                                <div class="info ">
+                                    <img src="avatars/3.png " width="40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>Televisor Samsung LED 55"</h4>
+                                        <small>6100 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            <div class="customer ">
+                                <div class="info ">
+                                    <img src="avatars/4.png " width="40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>Televisor Samsung LED 49"</h4>
+                                        <small>5900 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            <div class="customer ">
+                                <div class="info ">
+                                    <img src="avatars/5.png " width="40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>SmartWatch Samsumg Fit</h4>
+                                        <small>5300 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            <div class="customer ">
+                                <div class="info ">
+                                    <img src="avatars/6.png " width="40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>Sara Cortez</h4>
+                                        <small>5140 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            <div class="customer ">
+                                <div class="info ">
+                                    <img src="avatars/7.png " width="40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>Mario Ortiz</h4>
+                                        <small>4800 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            <div class="customer ">
+                                <div class="info ">
+                                    <img src="avatars/8.png " width="40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>Leopoldo Sas</h4>
+                                        <small>4800 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            <div class="customer ">
+                                <div class="info ">
+                                    <img src="avatars/9.png " width="40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>Sistema de audio Bose</h4>
+                                        <small>4400 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            <div class="customer ">
+                                <div class="info ">
+                                    <img src="avatars/10.png " width="40px " height="40px " alt=" ">
+                                    <div>
+                                        <h4>Brandon Carnadona</h4>
+                                        <small>4200 Unidades</small>
+                                    </div>
+                                </div>
+                                <div class="contact ">
+                                    <span class="las la-user-circle "></span>
+                                    <span class="lab la-whatsapp "></span>
+                                    <span class="las la-phone "></span>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+    </div>-->
+
+</body>
+
+</html>
