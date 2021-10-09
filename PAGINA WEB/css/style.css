@@ -211,6 +211,14 @@ main {
     color: #fff;
 }
 
+.title  {                                
+    font-size: 1.5rem;
+    margin: auto;
+    color: var(--main-color);
+    text-align: center;
+
+}
+
 .recent-grid {
     margin-top: 3.5rem;
     display: grid;
