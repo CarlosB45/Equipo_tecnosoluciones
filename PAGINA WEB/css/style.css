@@ -173,7 +173,28 @@ main {
     background: #f1f5f9;
     min-height: calc(100vh - 90px);
 }
+/*configuracion para la creacion de usuarios*/
+main form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border-color:#0B0B61 ;
+}
 
+main form p{
+    color: rgb(27, 22, 22);
+}
+
+main form input[type = "text"], input[type="email"]{
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    height: 35px;
+    margin: 0 auto;
+
+}
 /*configuracion de cuadros pantalla de inicio*/
 .cards {
     display: grid;
