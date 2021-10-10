@@ -203,6 +203,26 @@ main {
     text-align: center;
     color: black;
 }
+
+.ventana{
+    background: rgb(137, 137, 145);
+    width: 50%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 10px;
+    min-height: 300px;
+    border-radius: 22px;
+    position: absolute;
+    left: 34%;
+    display: none;
+}
+
+#cerrar{
+    position: absolute;
+    right: 3px;
+    top: 1px;
+}
+
 /*configuracion de cuadros pantalla de inicio*/
 .cards {
     display: grid;
