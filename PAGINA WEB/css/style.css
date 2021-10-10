@@ -176,66 +176,6 @@ main {
     background: #f1f5f9;
     min-height: calc(100vh - 90px);
 }
-/*configuracion para la creacion de usuarios*/
-.formulario{
-    width: 50%;
-    margin: 0 auto;
-    padding: 30px;
-    border-color:#0B0B61 ;
-}
-
-.formulario p{
-    color: rgb(27, 22, 22);
-}
-
-.formulario input[type = "text"], input[type="email"]{
-    margin-top: 10px;
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 20px;
-    height: 35px;
-    margin: 0 auto;
-
-}
-
-.sub_titulo{
-    text-align: center;
-    color: black;
-}
-
-.ventana{
-    background: rgb(137, 137, 145);
-    width: 50%;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    padding: 10px;
-    min-height: 300px;
-    border-radius: 22px;
-    position: absolute;
-    left: 34%;
-    display: none;
-}
-
-.cent{
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 20%;
-}
-
-.buton{
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 40%;
-}
-
-#cerrar{
-    position: absolute;
-    right: 3px;
-    top: 1px;
-}
 
 /*configuracion de cuadros pantalla de inicio*/
 .cards {
@@ -633,4 +573,66 @@ td img{
     margin-left: auto;
     margin-right: auto;
 
+}
+
+/*configuracion para la creacion de usuarios*/
+.formulario{
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border-color:#0B0B61 ;
+}
+
+.formulario p{
+    color: rgb(27, 22, 22);
+}
+
+.formulario input[type = "text"], input[type="email"]{
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    height: 35px;
+    margin: 0 auto;
+
+}
+
+.sub_titulo{
+    text-align: center;
+    color: black;
+}
+
+/*configuracion para la creacion de la ventana*/
+.ventana{
+    background: rgb(137, 137, 145);
+    width: 50%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 10px;
+    min-height: 300px;
+    border-radius: 22px;
+    position: absolute;
+    left: 34%;
+    display: none;
+}
+
+.cent{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.buton{
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+
+#cerrar{
+    position: absolute;
+    right: 3px;
+    top: 1px;
 }
