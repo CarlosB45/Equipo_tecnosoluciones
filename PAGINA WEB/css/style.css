@@ -50,6 +50,9 @@
     padding-left: 1rem;
 }
 
+.name-company{
+    margin: auto;
+}
 .sidebar-menu a {
     padding-left: 1rem;
     display: block;
