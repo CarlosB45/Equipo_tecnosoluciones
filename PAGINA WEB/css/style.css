@@ -271,38 +271,6 @@ main form input[type = "text"], input[type="email"]{
     border: 1px solid var(--main-color);
 }
 
-table {
-    border-collapse: collapse;
-}
-
-thead tr {
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 2px solid #f0f0f0;
-}
-
-thead td {
-    font-weight: 700;
-}
-
-td {
-    padding: .5rem 1rem;
-    font-size: .9rem;
-    color: #222;
-}
-
-td .status {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    margin-right: 1rem;
-}
-
-tr td:last-child {
-    display: flex;
-    align-items: center;
-}
-
 .status.green {
     background: rgb(6, 192, 6);
 }
@@ -500,4 +468,44 @@ h3
     font-size: 35px;
     line-height: 86px;
     color: #080a70;
+}
+
+.bodythead{
+    background-color: #0B0B61;
+    font-family: Arial;
+    flood-color: white; 
+}
+
+main-container{
+    margin: 150px auto;
+    width: 600px;
+}
+
+table {
+    background-color: #f1f5f9;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    border: solid 0.5px black;
+    padding: 10px;
+}
+
+thead{
+    background-color: #0B0B61;
+    border-bottom: solid 2px black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+       
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+tr:hover td{
+    background-color: #3e5f8a;
+    color:white;
 }
