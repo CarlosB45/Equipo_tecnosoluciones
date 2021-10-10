@@ -111,12 +111,22 @@
                         <br />
                         <br>
                         <p>Rol del sistema</p>
-                        <input type="text" name="Rol del sistema" placeholder="Ingresa el rol del sistema" id="Rol del sistema">
+                        <input type="text" id="rol_sis" name="Rol del sistema" placeholder="Ingresa el rol del sistema" id="Rol del sistema">
                         <br />
                         <br>
-                        <a href="javascript:cerrar()"><button type="submit" class="btn btn-primary">Guardar cambios</button></a>
+                        <div class="row">
+                            <div class="col">
+                                <a href="javascript:cerrar()"><button type="submit" class="btn btn-primary">Guardar cambios</button></a>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary" onclick="recibir();">Validar Rol</button>
+                            </div>
+                        </div>
+                        
                         <br />
-
+                        <br>
+                        
+                        <br />
                     </form>
                 </div>  
             </div>
