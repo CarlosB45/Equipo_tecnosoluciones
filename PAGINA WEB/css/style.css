@@ -177,18 +177,18 @@ main {
     min-height: calc(100vh - 90px);
 }
 /*configuracion para la creacion de usuarios*/
-main form{
+.formulario{
     width: 50%;
     margin: 0 auto;
     padding: 30px;
     border-color:#0B0B61 ;
 }
 
-main form p{
+.formulario p{
     color: rgb(27, 22, 22);
 }
 
-main form input[type = "text"], input[type="email"]{
+.formulario input[type = "text"], input[type="email"]{
     margin-top: 10px;
     width: 100%;
     padding-left: 5px;
@@ -197,6 +197,11 @@ main form input[type = "text"], input[type="email"]{
     height: 35px;
     margin: 0 auto;
 
+}
+
+.sub_titulo{
+    text-align: center;
+    color: black;
 }
 /*configuracion de cuadros pantalla de inicio*/
 .cards {
