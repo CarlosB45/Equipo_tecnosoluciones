@@ -211,7 +211,13 @@ main {
     margin-bottom: 1rem;
 }
 
-
+.cards-c {                                                     
+    display: grid;
+    grid-template-columns: repeat(3, 6fr);
+    grid-gap: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
 .card-inicio {
     display: flex;
