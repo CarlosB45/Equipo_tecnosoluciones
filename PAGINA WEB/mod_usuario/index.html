@@ -51,35 +51,32 @@
     </div>
 
     <div class="main-content">
-        <header>
+      <header>
+        <div>
+            <img src="../img/logo.png" width="60px" height="60px">
+        </div>
+        <div class="name-company">
+            <h2><span>Tecnosoluciones</span></h2>
+            <!--<input type="search" size="" placeholder="Busqueda" />-->
+        </div>
+        <div class="user-wrapper">
+            <img src="../img/icon/user.png" width="40px" height="40px" alt="">
             <div>
-                <img src="../img/logo.png" width="60px" height="60px">
+                <h4>Administrador</h4>
+                <small>Super Admin</small>
             </div>
-            <h2>
-                <label for="nav-toggle"></label>
-                    <span class="las la-bars"></span>
-                </label> Visualizacion
-            </h2>
-
-            <div class="search-wrapper">
-                <span class="las la-search"></span>
-                <input type="search" placeholder="Busqueda" />
-            </div>
-            <div class="user-wrapper">
-                <img src="../img/icon/user.png" width="40px" height="40px" alt="">
-                <div>
-                    <h4>Administrador</h4>
-                    <small>Super Admin</small>
-                </div>
-            </div>
-        </header>
+        </div>
+    </header>
 
         <main>
+          <div class="sub_titulo">
+            <h2>Tabla de usuarios</h2>
+            <br>
+          </div>
             <!--Tabla-->
             <table class="table">
                 <thead>
                   <tr>
-                    <td scope="col">#</td>  
                     <td scope="col">Nombre del usuario</td>
                     <td scope="col">Genero</td>
                     <td scope="col">Tipo de idenficacion</td>
@@ -91,7 +88,6 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
                     <td>Mark Otto</td>
                     <td>masculino</td>
                     <td>cedula de ciudadania</td>
@@ -101,7 +97,6 @@
                     <td>adm</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>Jacob Thornton</td>
                     <td>masculino</td>
                     <td>cedula de ciudadania</td>
@@ -111,7 +106,6 @@
                     <td>adm</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
                     <td>Larry the Bird</td>
                     <td>masculino</td>
                     <td>cedula de ciudadania</td>
@@ -121,7 +115,6 @@
                     <td>adm</td>
                   </tr>
                   <tr>
-                    <th scope="row">4</th>
                     <td>Larry the Bird</td>
                     <td>masculino</td>
                     <td>cedula de ciudadania</td>
@@ -131,7 +124,6 @@
                     <td>adm</td>
                   </tr>
                   <tr>
-                    <th scope="row">5</th>
                     <td>Larry the Bird</td>
                     <td>masculino</td>
                     <td>cedula de ciudadania</td>
@@ -141,7 +133,6 @@
                     <td>adm</td>
                   </tr>
                   <tr>
-                    <th scope="row">6</th>
                     <td>Larry the Bird</td>
                     <td>masculino</td>
                     <td>cedula de ciudadania</td>
@@ -151,7 +142,6 @@
                     <td>adm</td>
                   </tr>
                   <tr>
-                    <th scope="row">7</th>
                     <td>Larry the Bird</td>
                     <td>masculino</td>
                     <td>cedula de ciudadania</td>
@@ -162,6 +152,12 @@
                   </tr>
                 </tbody>
               </table>
+                <br>
+                <br>
+                <a href="../mod_usuario/create.html"><button type="submit" class="btn btn-primary">Añadir usuario</button></a>
+                <a href="../mod_usuario/modification.html"><button type="submit" class="btn btn-primary">Modificar usuario</button></a>
+                <a href="../mod_usuario/remove.html"><button type="submit" class="btn btn-primary">Eliminar usuario</button></a>
+                
         </main>
     </div>
 
