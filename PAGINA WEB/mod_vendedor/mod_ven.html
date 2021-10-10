@@ -27,13 +27,13 @@
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="../mod_vendedor/" class="active"><span class="con_ven"></span><span>Consultar Vendedores</span></a>
+                    <a href="../mod_vendedor/"><span class="con_ven"></span><span>Consultar Vendedores</span></a>
                 </li>
                 <li>
                     <a href="../mod_vendedor/crear_ven.html"><span class="crear_ven"></span><span>Crear Vendedores</span></a>
                 </li>
                 <li>
-                    <a href="../mod_vendedor/mod_ven.html"><span class="mod_ven"></span><span>Modificar Vendedores</span></a>
+                    <a href="../mod_vendedor/mod_ven.html" class="active"><span class="mod_ven"></span><span>Modificar Vendedores</span></a>
                 </li>
                 <li>
                     <a href="../mod_vendedor/elim_ven.html"><span class="elim_ven"></span><span>Eliminar Vendedores</span></a>
@@ -79,24 +79,15 @@
                             <input type="number"  class="formscontrol-div" style="width:inherit;" id="numdoc_vend" placeholder="Numero de Documento">
                         </div>
                         <div class="col-sm-3">
-                            <h6 class="card-title">Nombre Vendedor:</h6>
-                            <input type="text"  class="formscontrol-div" id="nom_vend" placeholder="Nombre de Vendedor">
-                        </div> 
-                        <div class="col-sm-3" style="text-align: center; margin: auto;">
-                            <button type="button"  class="btn btn-outline-primary" id="butt_cons_vend">Consultar</button>
-                        </div>
-                        
-                        <div class="col-sm-3">
                             <h6 class="card-title">Entidad:</h6>
                             <input type="text"  class="formscontrol-div" id="ent_vend" placeholder="Entidad">
                         </div>
                         <div class="col-sm-3">
-                            <h6 class="card-title">Telefono:</h6>
-                            <input type="text"  class="formscontrol-div" id="tel_vend" placeholder="Telefono">
-                        </div>
-                        <div class="col-sm-3">
                             <h6 class="card-title">Ciudad:</h6>
                             <input type="text"  class="formscontrol-div" id="ciu_vend" placeholder="Ciudad">
+                        </div>
+                        <div class="col-sm-12" style="text-align: center; margin: auto;">
+                            <button type="button"  class="btn btn-outline-primary" id="butt_cons_vend">Buscar</button>
                         </div> 
                     </div>
                 </div>
@@ -114,6 +105,7 @@
                                 <th>Entidad</th>
                                 <th>Telefono</th>
                                 <th>Ciudad</th>
+                                <th>Modificar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -124,6 +116,8 @@
                                 <td>Paga Todo</td>
                                 <td>3003113232</td>
                                 <td>Bogotá</td>
+                                <td style="text-align: center;"><a href=""><img src="../img/icon/edit_black_24dp.svg"></a></td>
+                                
                             </tr>
                             <tr>
                                 <td>Cedula Ciudadania</td>
@@ -132,14 +126,7 @@
                                 <td>Interrapidisimo</td>
                                 <td>3203158789</td>
                                 <td>Bogotá</td>
-                            </tr>
-                            <tr>
-                                <td>Cedula Ciudadania</td>
-                                <td>92568879</td>
-                                <td>Julian Andres Quesada</td>
-                                <td>Servientrega</td>
-                                <td>3112554141</td>
-                                <td>Cartagena</td>
+                                <td style="text-align: center;"><a href=""><img src="../img/icon/edit_black_24dp.svg"></a></td>
                             </tr>
                             <tr>
                                 <td>Cedula Extranjerida</td>
@@ -148,59 +135,19 @@
                                 <td>Interrapidisimo</td>
                                 <td>3168952120</td>
                                 <td>Bogotá</td>
+                                <td style="text-align: center;"><a href=""><img src="../img/icon/edit_black_24dp.svg"></a></td>
                             </tr>
-                            <tr>
-                                <td>Cedula Ciudadania</td>
-                                <td>40385662</td>
-                                <td>Manuel Garzón Sanchez</td>
-                                <td>Paga Todo</td>
-                                <td>3122669897</td>
-                                <td>Medellín</td>
-                            </tr>
-                            <tr>
-                                <td>Cedula Ciudadania</td>
-                                <td>10195602123</td>
-                                <td>Julieta Milena Quesada</td>
-                                <td>El Solecito Caliente</td>
-                                <td>3012668582</td>
-                                <td>Medellín</td>
-                            </tr>
-                            <tr>
-                                <td>Cedula Extranjerida</td>
-                                <td>21556213</td>
-                                <td>Marlen Salazar Orozco</td>
-                                <td>Madremia</td>
-                                <td>305226889</td>
-                                <td>Cali</td>
-                            </tr>
-                            <tr>
-                                <td>Cedula Ciudadania</td>
-                                <td>1025562133</td>
-                                <td>Katherine Gil Ortiz</td>
-                                <td>Mermelada Catalina</td>
-                                <td>3112295051</td>
-                                <td>Bogotá</td>
-                            </tr>
-                            <tr>
-                                <td>Cedula Ciudadania</td>
-                                <td>40256887</td>
-                                <td>Barbara Ortiz Bermudez</td>
-                                <td>Servientrega</td>
-                                <td>3213659797</td>
-                                <td>Bucaramanga</td>
-                            </tr>
-                            <tr>
-                                <td>Cedula Ciudadania</td>
-                                <td>86521321</td>
-                                <td>Julian Andres Salazar Rayo</td>
-                                <td>Servientrega</td>
-                                <td>3006118585</td>
-                                <td>Bogotá</td>
-                            </tr>
-
+                            
                         </tbody>
                     </table>
                 </div>  
+            </div>
+            <br><br>
+            <div class="alert alert-success" role="alert">
+                <span>El vendedor fue modificado correctamente, <strong>validar en plataforma</strong> </span>
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <span>Hubo una falla a la hora de modificar el vendedor, <strong>por favor validar</strong> </span>
             </div>
         </main>
     </div>
