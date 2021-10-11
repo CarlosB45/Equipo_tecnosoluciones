@@ -607,13 +607,13 @@ td img{
 .ventana{
     background: rgb(137, 137, 145);
     width: 50%;
-    color: rgba(255, 255, 255, 1);
+    color: rgb(27, 27, 27);
     text-align: center;
     padding: 10px;
     min-height: 300px;
     border-radius: 22px;
     position: absolute;
-    left: 34%;
+    left: 36%;
     display: none;
 }
 
