@@ -636,3 +636,13 @@ td img{
     right: 3px;
     top: 1px;
 }
+
+.formscontrol-div {
+
+    padding:2px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 2px solid #446a88dc;
+}
