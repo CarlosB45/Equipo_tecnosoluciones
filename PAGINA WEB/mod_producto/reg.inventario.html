@@ -25,19 +25,15 @@
             <ul>
                 <li>
                     <a href="../mod_producto/index.html" ><span class="home"></span>
-                    <span>Modulo de Productos</span></a>
+                    <span>Inventarios</span></a>
                 </li>
                 <li>
-                    <a href="" class="active"><span class="product"></span>
-                    <span>Registro de productos</span></a>
+                    <a href=""class="active"><span class="stock"></span>
+                    <span>Registro de inventario</span></a>
                 </li>
                 <li>
-                    <a href="./listado_productos.html"><span class="salesman"></span>
-                    <span>Información de productos</span></a>
-                </li>
-                <li>
-                    <a href="./edicion_productos.html"><span class="stock"></span>
-                    <span>Edición de productos</span></a>
+                    <a href="./almacenamiento_productos.html" ><span class="product"></span>
+                    <span>Actualización de Inventario</span></a>
                 </li>
                 <li class="list__item list__item--click">
                     <div class="list__button list__button--click">
@@ -50,7 +46,7 @@
     </div>
 
     <div class="main-content">
-         <header>
+        <header>
             <div>
                 <img src="../img/logo.png" width="60px" height="60px">
             </div>
@@ -60,7 +56,7 @@
             </div>
             <div class="user-wrapper">
                 <img src="../img/icon/user.png" width="40px" height="40px" alt="">
-                <div>
+            <div>
                     <h4>Administrador</h4>
                     <small>Super Admin</small>
                 </div>
@@ -68,35 +64,44 @@
         </header>
 
     <main>
-
-
-
-            <h3>Registro de producto</h3>
-            &nbsp;
-            &nbsp;
+        <div class="container"> 
+            <div class="row"> 
+                <div class="title">
+                    <h2>Registro de inventario </h2>
+                </div>
+            </div>
+        </div>
+        <br>
+            
             <div class='field'>
-                <label class="labelform">Código del producto</label>
-                <input type="number" class="formscontrol" required autocomplete>
+                <label class="labelform">Producto</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese nombre del producto" required autocomplete>
             </div>
             <div class='field'>
-                <label class="labelform">Nombre del producto</label>
-                <input type="text" class="formscontrol" required autocomplete>
+                <label class="labelform">Lote</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese lote del producto" required autocomplete>
             </div>
             <div class='field'>
-                <label class="labelform">Marca</label>
-                <input type="text" class="formscontrol" required autocomplete>
-            </div>
-            <div class='field'>
-                <label class="labelform">Referencia</label>
-                <input type="text" class="formscontrol" required autocomplete>
-            </div>
-            <div class='field'>
-                <label class="labelform">Valor unitario</label>
-                <input type="text" class="formscontrol" required autocomplete>
+                <div class="text-center">
+                    <form action="#">
+                        <div class="form-group">
+                            <label class="labelform">Fecha de recepción</label>
+                            <input type="datetime-local" class="formscontrol">
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class='field'>
                 <label class="labelform">Proveedor</label>
-                <input type="text" class="formscontrol" required autocomplete>
+                <input type="text" class="formscontrol" placeholder="Ingrese proveedor" required autocomplete>
+            </div>
+            <div class='field'>
+                <label class="labelform">Conteo de unidades</label>
+                <input type="number" class="formscontrol" placeholder="Ingrese número de unidades de producto" required autocomplete>
+            </div>
+            <div class='field'>
+                <label class="labelform">Novedades</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese cualquier novedad que se presente con este lote" required autocomplete>
             </div>
             <div class='field'>
                 <label class="labelform">Imagen del producto</label>
@@ -104,10 +109,10 @@
             </div>
             <div class='field'>
                 <label class="labelform">Almacenamiento</label>
-                <input type="text" class="formscontrol" required autocomplete>
+                <input type="text" class="formscontrol" placeholder="Ingrese ubicación final del lote" required autocomplete>
             </div>
             <div class='field'>
-                <input type="submit" class="formcontol" value="Guardar Producto">
+                <input type="submit" class="formcontol" value="Guardar Información">
             </div>
     </main>
 
