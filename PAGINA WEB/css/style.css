@@ -443,6 +443,16 @@ main {
     border: 2px solid #446a88dc;
 }
 
+.formscontrol-c {                   
+
+    padding:2px;
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 2px solid #446a88dc;
+}
+
 h3
 {   text-align: center;
     width: 1000px;
