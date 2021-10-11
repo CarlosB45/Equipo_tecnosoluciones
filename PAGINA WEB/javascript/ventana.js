@@ -14,3 +14,21 @@ function recibir(){
       alert("Ningun cambio en el rol del sistema");
    }
 } 
+
+function aceptar(){
+   var mensaje = confirm("¿Desea guardar estos cambios?");
+   if (mensaje) {
+      alert("Cambios guardados");
+   }else{
+      alert("Cambios no guardados");
+   }
+}
+
+function eliminar(){
+   var mensaje = confirm("¿Desea eliminar este registro?");
+   if (mensaje) {
+      alert("Registro eliminado");
+   }else{
+      alert("No se hicieron cambios");
+   }
+}
