@@ -656,3 +656,61 @@ td img{
     margin-bottom: 16px;
     border: 2px solid #446a88dc;
 }
+
+
+
+.container{
+    width: 330px;
+    height: 430px;
+    display: flex;
+    max-width: 1000px;
+}
+
+.cardproducts{
+    width: 570px;
+    height: 630px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cardproducts:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+
+}
+
+.cardproducts img{
+    width: 500px;
+    height: 400px;
+
+}
+
+.cardproducts.contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.cardproducts.contenido p{
+    line-height: 1.5;
+    color:#6a6a6a;
+}
+
+.cardproducts.contenido h4{    font-weight =400
+    margin-bottom:15px
+}
+
+.cardproducts.contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1x solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
