@@ -1,16 +1,17 @@
 import React, {Component } from 'react';
 
-const Register = () => (
+function Register = () {
+    return(
+        <div className="Register">
+            <body>
+                <h3>Registrate</h3>
 
-    <body>
-        <h3>Registrate</h3>
-
-        <select className ="identify" name="identificación">
-            <option value= "">Tipo de identificación</option>
-            <option value= "CC">Cédula de ciudadanía</option>
-            <option value= "CE">Cédula de extranjería</option>
-            <option value= "NIT">NIT</option>
-        </select>
+                <select className ="identify" name="identificación">
+                <option value= "">Tipo de identificación</option>
+                <option value= "CC">Cédula de ciudadanía</option>
+                <option value= "CE">Cédula de extranjería</option>
+                <option value= "NIT">NIT</option>
+                </select>
             <div className="form-group5">
                 <input type="email" className="formcontrol" value="Ingresé su nombre o nombre de empresa">
             </div>
@@ -33,7 +34,6 @@ const Register = () => (
                     <div className="signup">
                         <button type="submit" className="signup">Iniciar Sesión</button>
                     </div>
-                    </form>
                     <div className="new-account">
                     <p>¿No tienes una cuenta? <a className="text-primary" href="./page-register.html">Crea una nueva cuenta</a></p>
                 </div>
