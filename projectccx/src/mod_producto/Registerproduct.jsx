@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../Styles.css';
+import './Styles.css';
 
 function Registerproduct () {
     return(
@@ -42,51 +42,60 @@ function Registerproduct () {
                 </div>
                 <div className="name-company">
                     <h2><span>Tecnosoluciones</span></h2>
-                    <input type="search" size="" placeholder="Busqueda"/>
                 </div>
                 <div className="user-wrapper">
                     <img src="../img/icon/user.png" width="40px" height="40px" alt=""/>
-                    <h4>Administrador</h4>
-                    <small>Super Admin</small>
+                    <p><h4>Administrador</h4>
+                    <small>Super Admin</small></p>
                 </div>
             </header>
             <main>
                 <h3>Registro de producto</h3>
                 &nbsp;
                 &nbsp;
-                <div className='field'>
+                <div className="field">
+                    <label className="labelform">Tipo de producto</label>
+                    <select className="formscontrol" required autocomplete>
+                        <option value= "">Seleccione</option>
+                        <option value= "C">Computador</option>
+                        <option value= "TV">Televisor</option>
+                        <option value= "W">SmartWatch</option>
+                        <option value= "AC">Accesorios</option>
+                    </select>
+                </div>
+                <div className="field">
                     <label className="labelform">Código del producto</label>
                     <input type="number" className="formscontrol" required autocomplete/>
                 </div>
-                <div className='field'>
+                <div className="field">
                     <label className="labelform">Nombre del producto</label>
                     <input type="text" className="formscontrol" required autocomplete/>
                  </div>
-                <div className='field'>
+                <div className="field">
                     <label className="labelform">Marca</label>
                     <input type="text" className="formscontrol" required autocomplete/>
                 </div>
-                <div className='field'>
+                <div className="field">
                     <label className="labelform">Referencia</label>
                     <input type="text" className="formscontrol" required autocomplete/>
                 </div>
-                <div className='field'>
+                <div className="field">
                     <label className="labelform">Valor unitario</label>
                     <input type="text" className="formscontrol" required autocomplete/>
                 </div>
-                <div className='field'>
+                <div className="field">
                     <label className="labelform">Proveedor</label>
                 <input type="text" className="formscontrol" required autocomplete/>
                 </div>
-                <div className='field'>
+                <div className="field">
                     <label className="labelform">Imagen del producto</label>
                     <input type="submit" className="formcontrol" value="Cargar Imagen"/>
                 </div>
-                <div className='field'>
+                <div className="field">
                     <label className="labelform">Almacenamiento</label>
                     <input type="text" className="formscontrol" required autocomplete/>
                 </div>
-                <div className='field'>
+                <div className="field">
                     <input type="submit" className="formcontol" value="Guardar Producto"/>
                 </div>
             </main>
