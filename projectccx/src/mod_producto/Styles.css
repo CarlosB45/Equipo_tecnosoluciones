@@ -490,7 +490,7 @@ main-container{
 
 table {
     background-color: #f1f5f9;
-    text-align: left;
+    text-align: center;
     border-collapse: collapse;
     width: 100%;
 }
@@ -729,5 +729,10 @@ td img{
     margin-bottom: 16px;
     border: 2px solid #446a88dc;
 }
+
+.table-responsive {
+    display: table;
+}
+
 
 
