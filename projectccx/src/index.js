@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './mod_producto/Styles.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Vizualizacion from './mod_usuario/Vizualizacion';
 import Registerproduct from './mod_producto/Registerproduct';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Registerproduct/>
+    <Vizualizacion/>
   </React.StrictMode>,
   document.getElementById('root')
 );
