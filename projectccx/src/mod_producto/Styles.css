@@ -730,9 +730,45 @@ td img{
     border: 2px solid #446a88dc;
 }
 
-.table-responsive {
-    display: table;
+.table-responsive table{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+.boton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120%;
+    height: 35px;
+    background: #0B0B61;
+    color: rgb(248, 247, 247);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+}
+
+.botonedit{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 140%;
+    height: 35px;
+    background: #1670e6;
+    color: rgb(248, 247, 247);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+}
 
 

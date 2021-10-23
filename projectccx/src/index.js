@@ -5,10 +5,13 @@ import './mod_producto/Styles.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Vizualizacion from './mod_usuario/Vizualizacion';
 import Registerproduct from './mod_producto/Registerproduct';
+import Listproducts from './mod_producto/Listproducts';
+import Editproduct from './mod_producto/Editproduct';
+import Edicionproductos from './mod_producto/Edicionproductos'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Vizualizacion/>
+    <Edicionproductos/>
   </React.StrictMode>,
   document.getElementById('root')
 );

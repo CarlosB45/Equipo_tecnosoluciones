@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import './Styles.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Registerproduct () {
+function Editproduct () {
     return(
-        <div className="registerproduct">
+        <div className="editproduct">
             <div className="sidebar">
                 <div className="sidebar-brand">
                     <h2><span className="Inventario"></span> <span></span></h2>
@@ -17,7 +17,7 @@ function Registerproduct () {
                             <span>Modulo de Productos</span></a>
                         </li>
                         <li>
-                            <a href="" className="active"><span className="product"></span>
+                            <a href="" ><span className="product"></span>
                             <span>Registro de productos</span></a>
                         </li>
                         <li>
@@ -25,7 +25,7 @@ function Registerproduct () {
                             <span>Información de productos</span></a>
                         </li>
                         <li>
-                            <a href="./edicion_productos.html"><span className="stock"></span>
+                            <a href="./edicion_productos.html"className="active"><span className="stock"></span>
                             <span>Edición de productos</span></a>
                         </li>
                         <li className="list__item list__item--click">
@@ -51,19 +51,9 @@ function Registerproduct () {
                 </div>
             </header>
             <main>
-                <h3>Registro de producto</h3>
+                <h3>Edición de productos</h3>
                 &nbsp;
                 &nbsp;
-                <div className="field">
-                    <label className="labelform">Tipo de producto</label>
-                    <select className="formscontrol" required autocomplete>
-                        <option value= "">Seleccione</option>
-                        <option value= "C">Computador</option>
-                        <option value= "TV">Televisor</option>
-                        <option value= "W">SmartWatch</option>
-                        <option value= "AC">Accesorios</option>
-                    </select>
-                </div>
                 <div className="field">
                     <label className="labelform">Código del producto</label>
                     <input type="number" className="formscontrol" required autocomplete/>
@@ -90,14 +80,17 @@ function Registerproduct () {
                 </div>
                 <div className="field">
                     <label className="labelform">Imagen del producto</label>
-                    <input type="submit" className="boton" value="Cargar Imagen"/>
+                    <input type="submit" className="botonedit" value="Cargar Imagen"/>
                 </div>
                 <div className="field">
                     <label className="labelform">Almacenamiento</label>
                     <input type="text" className="formscontrol" required autocomplete/>
                 </div>
                 <div className="field">
-                    <input type="submit" className="boton" value="Guardar Producto"/>
+                    <input type="submit" className="botonedit" value="Actualizar Producto"/>
+                </div>
+                <div className="field">
+                    <input type="submit" className="botonedit" value="Eliminar Producto"/>
                 </div>
             </main>
         </div>
@@ -105,4 +98,4 @@ function Registerproduct () {
 
     );
 }
-    export default Registerproduct;
+    export default Editproduct;

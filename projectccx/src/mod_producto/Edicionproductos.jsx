@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import './Styles.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-    <head>
+import '../images/index_img';
+
+<head>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </head>
+</head>
 
-function Listproducts () {
+function Edicionproductos () {
     return(
-        <div className="Listaproductos">
+        <div className="edicionproductos">
             <div className="sidebar">
                 <div className="sidebar-brand">
                     <h2><span className="Inventario"></span> <span></span></h2>
@@ -26,11 +28,11 @@ function Listproducts () {
                             <span>Registro de productos</span></a>
                         </li>
                         <li>
-                            <a href="./listado_productos.html" className="active"><span className="salesman"></span>
+                            <a href="./listado_productos.html" ><span className="salesman"></span>
                             <span>Información de productos</span></a>
                         </li>
                         <li>
-                            <a href="./edicion_productos.html"><span className="stock"></span>
+                            <a href="./Edicion_productos.html"className="active"><span className="stock"></span>
                             <span>Edición de productos</span></a>
                         </li>
                         <li className="list__item list__item--click">
@@ -176,4 +178,4 @@ function Listproducts () {
         </div>
     );
 }
-    export default Listproducts;
+    export default Edicionproductos;
