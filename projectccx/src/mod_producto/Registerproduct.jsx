@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './Styles.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+import '../style/Styles.css';
+import {Link} from 'react-router-dom';
 
 function Registerproduct () {
     return(
@@ -13,24 +13,24 @@ function Registerproduct () {
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <a href="../mod_producto/index.html" ><span className="home"></span>
-                            <span>Modulo de Productos</span></a>
+                            <Link to ="./Iniciomodulos" ><span className="home"></span>
+                            <span>Modulo de Productos</span></Link>
                         </li>
                         <li>
-                            <a href="" className="active"><span className="product"></span>
-                            <span>Registro de productos</span></a>
+                            <Link to="./Registerproduct" className="active"><span className="product"></span>
+                            <span>Registro de productos</span></Link>
                         </li>
                         <li>
-                            <a href="./listado_productos.html"><span className="salesman"></span>
-                            <span>Información de productos</span></a>
+                            <Link to="./Listproducts"><span className="salesman"></span>
+                            <span>Información de productos</span></Link>
                         </li>
                         <li>
-                            <a href="./edicion_productos.html"><span className="stock"></span>
-                            <span>Edición de productos</span></a>
+                            <Link to="./Edicionproductos"><span className="stock"></span>
+                            <span>Edición de productos</span></Link>
                         </li>
                         <li className="list__item list__item--click">
                             <div className="list__button list__button--click">
-                                <a href="./index.html" className="nav__link">Volver</a>
+                                <Link to="./Iniciomodulos" className="nav__link">Volver</Link>
                                 <img src="../img/icon/icons8-return-30.png" className="list__return"/>
                             </div>
                         </li>
@@ -51,8 +51,7 @@ function Registerproduct () {
                 </div>
             </header>
             <main>
-                <h3>Registro de producto</h3>
-                &nbsp;
+                <div className= "Title1"> Registro de producto</div>
                 &nbsp;
                 <div className="field">
                     <label className="labelform">Tipo de producto</label>

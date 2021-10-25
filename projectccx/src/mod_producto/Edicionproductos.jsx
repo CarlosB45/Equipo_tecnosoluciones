@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
-import './Styles.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-import '../images/index_img';
+import {Link} from 'react-router-dom';
+import '../style/Styles.css';
 
-<head>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
 
 function Edicionproductos () {
     return(
@@ -19,25 +13,25 @@ function Edicionproductos () {
 
                 <div className="sidebar-menu">
                     <ul>
-                        <li>
-                            <a href="./index.js" ><span className="home"></span>
-                            <span>Modulo de Productos</span></a>
+                    <li>
+                            <Link to ="./Iniciomodulos" ><span className="home"></span>
+                            <span>Modulo de Productos</span></Link>
                         </li>
                         <li>
-                            <a href="./Registerproduct" ><span className="product"></span>
-                            <span>Registro de productos</span></a>
+                            <Link to="./Registerproduct" className="active"><span className="product"></span>
+                            <span>Registro de productos</span></Link>
                         </li>
                         <li>
-                            <a href="./listado_productos.html" ><span className="salesman"></span>
-                            <span>Información de productos</span></a>
+                            <Link to="./Listproducts"><span className="salesman"></span>
+                            <span>Información de productos</span></Link>
                         </li>
                         <li>
-                            <a href="./Edicion_productos.html"className="active"><span className="stock"></span>
-                            <span>Edición de productos</span></a>
+                            <Link to="./Edicionproductos"><span className="stock"></span>
+                            <span>Edición de productos</span></Link>
                         </li>
                         <li className="list__item list__item--click">
                             <div className="list__button list__button--click">
-                                <a href="./index.html" className="nav__link">Volver</a>
+                                <a href="./Iniciomodulos" className="nav__link">Volver</a>
                                 <img src="../img/icon/icons8-return-30.png" className="list__return"/>
                             </div>
                         </li>
@@ -58,21 +52,22 @@ function Edicionproductos () {
                 </div>
             </header>
             <main>
-                <div classname="card">
-                    <div classname="card-header">
-                        <h3 classname="Listado">Información de productos</h3>
+                <div className="card">
+                    <div className="card-header">
+                        <div className="Titulo1">Edición de productos</div>
                     </div>
-                    <div classname= "busqueda">
-                        <h4 classname="Listado">Busqueda</h4>
-                        <input type="text" classname="formscontrols" placeholder= "Nombre del producto"/>
-                        <input type="text" classname="formscontrols" placeholder= "Código del producto"/>
-                        <input type="text" classname="formscontrols" placeholder= "Referencia del producto"/>
-                        <input type="text" classname="formscontrols" placeholder= "Marca del producto"/>
-                        <input type="text" classname="formscontrols" placeholder= "Proveedor del producto"/>
-                        <input type="text" classname="formscontrols" placeholder= "Lugar de almacenamiento"/>
+                    <div className= "busqueda">
+                        <h4 className="Listado">Busqueda</h4>
+                        <input type="text" className="formscontrols" placeholder= "Nombre del producto"/>
+                        <input type="text" className="formscontrols" placeholder= "Código del producto"/>
+                        <input type="text" className="formscontrols" placeholder= "Referencia del producto"/>
+                        <input type="text" className="formscontrols" placeholder= "Marca del producto"/>
+                        <input type="text" className="formscontrols" placeholder= "Proveedor del producto"/>
+                        <input type="text" className="formscontrols" placeholder= "Lugar de almacenamiento"/>
                     </div>
-                    <div classname="table-responsive">
-                        <table classname="table">
+                </div>
+                <div className="table-responsive1">
+                    <table className="table table-xs">
                         <thead>
                         <tr>
                             <th scope="col">N°</th>
@@ -83,7 +78,8 @@ function Edicionproductos () {
                             <th scope="col">Valor unitario</th>
                             <th scope="col">Proveedor</th>
                             <th scope="col">Almacenamiento</th>
-                            <th scope="col">Ver</th>
+                            <th scope="col">Edición</th>
+                            <th scope="col">Eliminar</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -96,7 +92,8 @@ function Edicionproductos () {
                             <td> $ 4.599.900</td>
                             <td>Electronic S.A</td>
                             <td>Bodega de Seguridad 1</td>
-                            <td><a href="./ficha_producto.html"> <img src="../img/icon/visibility_black_24dp.svg"/></a></td>
+                            <List to="./Editproduct"><td> <img src="../img/icon/edit_black_24dp.svg"/></td></List>
+                            <td><List to="./Editproduct"> <img src="../img/icon/delete_black_24dp.svg"/></List></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
@@ -107,7 +104,8 @@ function Edicionproductos () {
                             <td>2799900</td>
                             <td>Semic S.A.S</td>
                             <td>Bodega de Seguridad 1</td>
-                            <td><a href="./ficha_producto.html"> <img src="../img/icon/visibility_black_24dp.svg"/></a></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/edit_black_24dp.svg"/></List></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/delete_black_24dp.svg"/></List></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
@@ -118,7 +116,8 @@ function Edicionproductos () {
                             <td>2349900</td>
                             <td>Electronic S.A</td>
                             <td>Bodega de Seguridad 1</td>
-                            <td><a href="./ficha_producto.html"> <img src="../img/icon/visibility_black_24dp.svg"/></a></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/edit_black_24dp.svg"/></List></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/delete_black_24dp.svg"/></List></td>
 
                         </tr>
                         <tr>
@@ -130,7 +129,8 @@ function Edicionproductos () {
                             <td>3329900</td>
                             <td>Semic S.A.S</td>
                             <td>Bodega de Seguridad 2</td>
-                            <td><a href="./ficha_producto.html"> <img src="../img/icon/visibility_black_24dp.svg"/></a></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/edit_black_24dp.svg"/></List></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/delete_black_24dp.svg"/></List></td>
 
                         </tr>
                         <tr>
@@ -142,7 +142,8 @@ function Edicionproductos () {
                             <td>3559000</td>
                             <td>Electronic S.A</td>
                             <td>Bodega de Seguridad 2</td>
-                            <td><a href="./ficha_producto.html"> <img src="../img/icon/visibility_black_24dp.svg"/></a></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/edit_black_24dp.svg"/></List></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/delete_black_24dp.svg"/></List></td>
 
                         </tr>
                         <tr>
@@ -154,7 +155,8 @@ function Edicionproductos () {
                             <td>649900</td>
                             <td>Maiket</td>
                             <td>Bodega de Seguridad 3</td>
-                            <td><a href="./ficha_producto.html"> <img src="../img/icon/visibility_black_24dp.svg"/></a></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/edit_black_24dp.svg"/></List></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/delete_black_24dp.svg"/></List></td>
 
                         </tr>
 
@@ -167,12 +169,12 @@ function Edicionproductos () {
                             <td>1139900</td>
                             <td>Electronic S.A</td>
                             <td>Bodega de Seguridad 3</td>
-                            <td><a href="./ficha_producto.html"> <img src="../img/icon/visibility_black_24dp.svg"/></a></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/edit_black_24dp.svg"/></List></td>
+                            <td><List to ="./Editproduct"> <img src="../img/icon/delete_black_24dp.svg"/></List></td>
 
                         </tr>
                         </tbody>
-                        </table>
-                    </div>
+                    </table>
                 </div>
             </main>
         </div>
