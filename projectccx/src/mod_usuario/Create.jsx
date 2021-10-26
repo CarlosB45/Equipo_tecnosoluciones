@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../style/Styles.css';
-
+import { Link } from 'react-router-dom';
 
 function Create (){
     return(
@@ -13,24 +13,24 @@ function Create (){
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <a href="Vizualizacion.jsx"><span className="home"></span>
-                            <span>Visualizacion</span></a>
+                            <Link to="./Vizualizacion"><img src="../img/icon/table_view_white_24dp.svg" /><span className="home"></span>
+                            <span>Visualizacion</span></Link>
                         </li>
                         <li>
-                            <a href="Create.jsx" className="active"><span className="product"></span>
-                            <span>Creación</span></a>
+                            <Link to="./Create" className="active"><img src="../img/icon/add_circle_outline_black_24dp.svg" /><span className="product"></span>
+                            <span>Creación</span></Link>
                         </li>
                         <li>
-                            <a href="Modification.jsx"><span className="salesman"></span>
-                            <span>Modificacón</span></a>
+                            <Link to="./Modification"><img src="../img/icon/edit_white_24dp.svg" /><span className="salesman"></span>
+                            <span>Modificacón</span></Link>
                         </li>
                         <li>
-                            <a href="Remove.jsx"><span className="stock"></span>
-                            <span>Eliminación</span></a>
+                            <Link to="./Remove"><img src="../img/icon/delete_white_24dp.svg" /><span className="stock"></span>
+                            <span>Eliminación</span></Link>
                         </li>
                         <li>
-                            <a href="../index.html"><span className="home"></span>
-                            <span>Inicio</span></a>
+                            <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span className="home"></span>
+                            <span>Inicio</span></Link>
                         </li>
                     </ul>
                 </div>

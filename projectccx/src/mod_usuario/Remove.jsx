@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../style/Styles.css';
+import { Link } from 'react-router-dom';
 
 function Remove (){
     return (
@@ -12,24 +13,24 @@ function Remove (){
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <a href="vizualizacion.js"><span className="home"></span>
-                            <span>Visualizacion</span></a>
+                            <Link to="./Vizualizacion"><img src="../img/icon/table_view_white_24dp.svg" /><span className="home"></span>
+                            <span>Visualizacion</span></Link>
                         </li>
                         <li>
-                            <a href="create.jsx" ><span className="product"></span>
-                            <span>Creación</span></a>
+                            <Link to="./Create" ><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span className="product"></span>
+                            <span>Creación</span></Link>
                         </li>
                         <li>
-                            <a href="modification.jsx"><span className="salesman"></span>
-                            <span>Modificacón</span></a>
+                            <Link to="./Modification"><img src="../img/icon/edit_white_24dp.svg" /><span className="salesman"></span>
+                            <span>Modificacón</span></Link>
                         </li>
                         <li>
-                            <a href="remove.jsx"className="active"><span className="stock"></span>
-                            <span>Eliminación</span></a>
+                            <Link to="./Remove"className="active"><img src="../img/icon/delete_black_24dp.svg" /><span className="stock"></span>
+                            <span>Eliminación</span></Link>
                         </li>
                         <li>
-                            <a href="../index.html"><span className="home"></span>
-                            <span>Inicio</span></a>
+                            <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span className="home"></span>
+                            <span>Inicio</span></Link>
                         </li>
                     </ul>
                 </div>
@@ -56,18 +57,6 @@ function Remove (){
                 </header>
 
                 <main>
-                    <div class="ventana" id="vent">
-                        <div id="cerrar"><a href="javascript:cerrar()"></a></div>
-                        <div class="cent">ESTAS SEGURO QUE QUIERES ELIMINAR ESTE USUARIO</div> 
-
-                        <div class="buton">
-
-                            <a href="javascript:cerrar()"><button type="button" class="btn btn-success">SI</button></a>
-                            <a href="javascript:cerrar()"><button type="button" class="btn btn-danger">NO</button></a>
-
-                        </div>
-    
-                    </div>
 
                     <table class="table">
                         <thead>
@@ -92,7 +81,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -103,7 +92,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -114,7 +103,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -125,7 +114,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3004355</td>
                                 <td>mercante</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -136,7 +125,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>venta</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -147,7 +136,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>30145352</td>
                                 <td>vendedor</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -158,6 +147,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3005953</td>
                                 <td>adm</td>
+                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
                             </tr>
                         </tbody>
                     </table>

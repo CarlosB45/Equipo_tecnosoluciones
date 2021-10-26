@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import '../style/Styles.css';
+import fef from '../Inicio/Home'
+import { Link } from 'react-router-dom';
 
 function vizualizacion () {
     return (
@@ -13,24 +15,24 @@ function vizualizacion () {
               <div className="sidebar-menu">
                   <ul>
                     <li>
-                       <a href="Vizualizacion.jsx" class="active"><span class="home"></span>
-                       <span>Visualizacion</span></a>
+                       <Link to="./Vizualizacion" class="active"><img src="../img/icon/table_view_black_24dp.svg" /><span class="home"></span>
+                       <span>Visualizacion</span></Link>
                     </li>
                     <li>
-                       <a href="Create.jsx" ><span class="product"></span>
-                       <span>Creación</span></a>
+                       <Link to="./Create" ><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span class="product"></span>
+                       <span>Creación</span></Link>
                     </li>
                     <li>
-                       <a href="Modification.jsx"><span class="salesman"></span>
-                       <span>Modificacón</span></a>
+                       <Link to="./Modification"><img src="../img/icon/edit_white_24dp.svg" /><span class="salesman"></span>
+                       <span>Modificacón</span></Link>
                     </li>
                     <li>
-                       <a href="Remove.jsx"><span class="stock"></span>
-                       <span>Eliminación</span></a>
+                       <Link to="./Remove"><img src="../img/icon/delete_white_24dp.svg" /><span class="stock"></span>
+                       <span>Eliminación</span></Link>
                     </li>
                     <li>
-                       <a href="../index.html"><span class="home"></span>
-                       <span>Inicio</span></a>
+                       <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span class="home"></span>
+                       <span>Inicio</span></Link>
                     </li>
                   </ul>
                 </div>

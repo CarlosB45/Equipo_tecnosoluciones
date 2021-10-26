@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../style/Styles.css';
+import { Link } from 'react-router-dom';
 
 function Modification (){
     return (
@@ -13,24 +14,24 @@ function Modification (){
               <div className="sidebar-menu">
                   <ul>
                     <li>
-                       <a href="index.html"><span className="home"></span>
-                       <span>Visualizacion</span></a>
+                       <Link to="./Vizualizacion"><img src="../img/icon/table_view_white_24dp.svg" /><span className="home"></span>
+                       <span>Visualizacion</span></Link>
                     </li>
                     <li>
-                       <a href="create.html" ><span className="product"></span>
-                       <span>Creación</span></a>
+                       <Link to="./Create"><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span className="product"></span>
+                       <span>Creación</span></Link>
                     </li>
                     <li>
-                       <a href="modification.html" className="active"><span className="salesman"></span>
-                       <span>Modificacón</span></a>
+                       <Link to="./Modification" className="active"><img src="../img/icon/edit_black_24dp.svg" /><span className="salesman"></span>
+                       <span>Modificacón</span></Link>
                     </li>
                     <li>
-                       <a href="remove.html"><span className="stock"></span>
-                       <span>Eliminación</span></a>
+                       <Link to="./Remove"><img src="../img/icon/delete_white_24dp.svg" /><span className="stock"></span>
+                       <span>Eliminación</span></Link>
                     </li>
                     <li>
-                       <a href="../index.html"><span className="home"></span>
-                       <span>Inicio</span></a>
+                       <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span className="home"></span>
+                       <span>Inicio</span></Link>
                     </li>
                   </ul>
                 </div>
@@ -57,59 +58,6 @@ function Modification (){
                 </header>
 
                 <main>
-                    <div className="ventana" id="vent">
-                        <div id="cerrar"><a href="javascript:cerrar()"></a></div>
-                        
-                        Modificar usuario
-                        <div className="formulario">
-                            <form name="registro">
-                                <p>Nombre completo</p> 
-                                <input type="text" name="Nombre completo" placeholder="Ingresa el nombre" id="Nombre completo"></input>
-                                <br />
-                                <br />
-                                <p>Genero</p>
-                                <input type="text" name="Genero" placeholder="Ingresa el genero" id="Genero"></input>
-                                <br />
-                                <br />
-                                <p>Tipo de identinficacion</p>
-                                <select name="Tipo de identificacion" id="Tipo de identificacion">
-                                    <option value="">seleciona una opcion</option>
-                                    <option value="Cedula de ciudadania">Cedula de ciudadania</option>
-                                    <option value="Cedula de extranjeria">Cedula de extranjeria</option>
-                                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
-                                    <option value="Pasaporte">Pasaporte</option>
-
-                                </select>
-                                <br />
-                                <br />
-                                <p>Numero de identificacion</p>
-                                <input type="text" name="Numero de identificacion" placeholder="Ingresa el numero de identificacion" id="Numero de identificacion"></input>
-                                <br />
-                                <br />
-                                <p>Correo electronico</p>
-                                <input type="email" name="Correo electronico" placeholder="Ingresa el correo" id="Correo electronico"></input>
-                                <br />
-                                <br />
-                                <p>Numero de telefono</p>
-                                <input type="text" name="Numero de telefono" placeholder="Ingresa el numero de telefono" id="Numero de telefono"></input>
-                                <br />
-                                <br />
-                                <p>Rol del sistema</p>
-                                <input type="text" id="rol_sis" name="Rol del sistema" placeholder="Ingresa el rol del sistema" id="Rol del sistema"></input>
-                                <br />
-                                <br />
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="javascript:cerrar()"><button type="submit" class="btn btn-primary">Guardar cambios</button></a>
-                                    </div>
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-primary" onclick="recibir();">Validar Rol</button>
-                                    </div>
-                                </div>
-                            
-                            </form>
-                        </div>
-                    </div>
 
                     <table class="table">
                         <thead>
@@ -134,7 +82,7 @@ function Modification (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/edit_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -145,7 +93,7 @@ function Modification (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/edit_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -156,7 +104,7 @@ function Modification (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/edit_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -167,7 +115,7 @@ function Modification (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3004355</td>
                                 <td>mercante</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/edit_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -178,7 +126,7 @@ function Modification (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>venta</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/edit_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -189,7 +137,7 @@ function Modification (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>30145352</td>
                                 <td>vendedor</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/edit_black_24dp.svg"/></a></td>
                             </tr>
 
                             <tr>
@@ -200,7 +148,7 @@ function Modification (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3005953</td>
                                 <td>adm</td>
-                                <td style="text-align: center;"><a href="javascript:abrir()"></a></td>
+                                <td><a><img src="../img/icon/edit_black_24dp.svg"/></a></td>
                             </tr>
                         </tbody>
                     </table>
