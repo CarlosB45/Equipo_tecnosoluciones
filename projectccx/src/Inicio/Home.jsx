@@ -32,8 +32,8 @@ function Home (){
                             <span>Ventas</span></Link>
                         </li>
                         <li>
-                            <Link to="./Vizualizacion"><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span className="home"></span>
-                            <span>Gestión de usuarios</span></Link>
+                            <Link to="./Vizualizacion"><img src="../img/icon/add_circle_outline_white_24dp.svg" alt=""/><span class="users"></span>
+                            <img src="../img/icon/manage_accounts_white_24dp.svg" width="30px" height="30px"/>Gestión de usuarios</Link>
                         </li>
                     </ul>
                 </div>
