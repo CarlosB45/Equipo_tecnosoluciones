@@ -1,4 +1,4 @@
-import React from 'react';
+veimport React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../style/Styles.css';
 import images from '../../src/images/index_img';
@@ -53,7 +53,7 @@ function Inquiryinv () {
         <div className="container"> 
                 <div className="row"> 
                     <div className="title">
-                        <h2>Consulta individual</h2>
+                        <h2>Consulta de inventario</h2>
                     </div>
                 </div>
             </div>
