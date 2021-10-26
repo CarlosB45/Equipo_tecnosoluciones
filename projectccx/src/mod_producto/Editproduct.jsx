@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './Styles.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+import '../style/Styles.css';
+import '../style/Styles.css';
 
 function Editproduct () {
     return(
@@ -13,24 +13,24 @@ function Editproduct () {
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <a href="../mod_producto/index.html" ><span className="home"></span>
+                            <a href="./Iniciomodulos" ><span className="home"></span>
                             <span>Modulo de Productos</span></a>
                         </li>
                         <li>
-                            <a href="" ><span className="product"></span>
+                            <a href="./Registerproduct" ><span className="product"></span>
                             <span>Registro de productos</span></a>
                         </li>
                         <li>
-                            <a href="./listado_productos.html"><span className="salesman"></span>
+                            <a href="./Listproducts"><span className="salesman"></span>
                             <span>Información de productos</span></a>
                         </li>
                         <li>
-                            <a href="./edicion_productos.html"className="active"><span className="stock"></span>
+                            <a href="./Edicionproductos"className="active"><span className="stock"></span>
                             <span>Edición de productos</span></a>
                         </li>
                         <li className="list__item list__item--click">
                             <div className="list__button list__button--click">
-                                <a href="./index.html" className="nav__link">Volver</a>
+                                <a href="./Iniciomodulos" className="nav__link">Volver</a>
                                 <img src="../img/icon/icons8-return-30.png" className="list__return"/>
                             </div>
                         </li>
@@ -51,7 +51,7 @@ function Editproduct () {
                 </div>
             </header>
             <main>
-                <h3>Edición de productos</h3>
+                <div className="Title2">Edición de productos</div>
                 &nbsp;
                 &nbsp;
                 <div className="field">

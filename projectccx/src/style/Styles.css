@@ -186,15 +186,22 @@ main {
     margin-top: 85px;
     padding: 2rem 1.5rem;
     background: #f1f5f9;
-    min-height: calc(100vh - 90px);
+    min-height: calc(100vh - 300px);
 }
 
 /*configuracion de cuadros pantalla de inicio*/
+
+.card {
+    height: max-content;
+    width: S;
+    padding: 20px 21rem;
+}
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 6fr);
     grid-gap: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 100rem;
+
 }
 
 .cards-c {
@@ -256,10 +263,16 @@ main {
 }
 
 .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    width: 1020px;
+    height: 80px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 86px;
+    color: #080a70;
 }
 
 .card-header button {
@@ -286,6 +299,7 @@ main {
 .table-responsive {
     width: 100%;
     overflow-x: auto;
+    padding: 20px 1rem;
 }
 
 .customer {
@@ -472,7 +486,7 @@ h3
 {   text-align: center;
     width: 1675px;
     height: 80px;
-    left: 1000px;
+    left: 2000px;
     top: 1000px;
 
     font-family: Montserrat;
@@ -680,15 +694,19 @@ td img{
 }
 
 .cardproducts{
-    width: 570px;
-    height: 630px;
-    margin: 20px;
+    height: 200vmax;
+    width: 700px;
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding: 7px 511px;
     border-radius: 6px;
     overflow: hidden;
     background: #fff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
+    float: left;
 }
 
 .cardproducts:hover{
@@ -720,8 +738,9 @@ td img{
 
 .busqueda {
     width: 1000px;
-    height: 200px;
-    display: block;
+    height: 20z0px;
+    padding: 20px 2rem;
+    display: inline-block;
     margin-left: 1%;
     margin-right: 100%;
 }
@@ -738,6 +757,83 @@ td img{
 
 .table-responsive {
     display: table;
+    overflow-x: auto;
+    padding: 20px 21rem;
+}
+
+
+.boton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120%;
+    height: 35px;
+    background: #0B0B61;
+    color: rgb(248, 247, 247);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+}
+
+.botonedit{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 140%;
+    height: 35px;
+    background: #1670e6;
+    color: rgb(248, 247, 247);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+}
+
+.Title1 {   
+    text-align: center;
+    width: 1700px;
+    height: 80px;
+    left: 2000px;
+    top: 1000px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 86px;
+    color: #080a70;
+}
+
+.Title2 {   text-align: center;
+    width: 1700px;
+    height: 80px;
+    left: 2000px;
+    top: 1000px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 86px;
+    color: #080a70;
+}
+
+.figure {
+    margin-top: 90px;
+    padding: 200px 21rem;
+    background: #f1f5f9;
+    min-height: calc(100vh - 100px);
+}
+
+.table-responsive1 {
+    width: 145%;
+    overflow-x: auto;
+    padding: 20px 21rem;
 }
 
 
