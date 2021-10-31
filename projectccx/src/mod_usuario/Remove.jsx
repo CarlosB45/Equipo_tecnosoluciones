@@ -81,7 +81,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -92,7 +92,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -103,7 +103,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -114,7 +114,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3004355</td>
                                 <td>mercante</td>
-                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -125,7 +125,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>venta</td>
-                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -136,7 +136,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>30145352</td>
                                 <td>vendedor</td>
-                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -147,7 +147,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3005953</td>
                                 <td>adm</td>
-                                <td><a><img src="../img/icon/delete_black_24dp.svg"/></a></td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
                         </tbody>
                     </table>

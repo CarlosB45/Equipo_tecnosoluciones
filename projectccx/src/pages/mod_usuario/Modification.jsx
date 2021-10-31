@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../style/Styles.css';
+import '../../style/Styles.css';
 import { Link } from 'react-router-dom';
 import { Button, Modal, ModalBody, ModalHeader, ModalFooter, FormGroup, Input, Label, Select} from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.min.css";

@@ -625,7 +625,7 @@ td img{
     color: rgb(27, 22, 22);
 }
 
-.formulario input[type = "text"], input[type="email"]{
+.formulario input[type = "text"], input[type="email"],input[type = "number"]{
     margin-top: 10px;
     width: 100%;
     padding-left: 5px;
@@ -636,6 +636,15 @@ td img{
 
 }
 
+.formulario2 input[type = "text"], input[type="email"],input[type = "number"]{
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    height: 35px;
+    margin: 0 auto;
+}
 .sub_titulo{
     text-align: center;
     color: black;
@@ -674,6 +683,8 @@ td img{
     right: 3px;
     top: 1px;
 }
+
+
 
 .formscontrol-div {
 

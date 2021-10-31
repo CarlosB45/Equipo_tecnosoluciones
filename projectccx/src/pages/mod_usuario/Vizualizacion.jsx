@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import '../style/Styles.css';
-import fef from '../Inicio/Home'
+import '../../style/Styles.css';
 import { Link } from 'react-router-dom';
 
 function vizualizacion () {

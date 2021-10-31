@@ -1,40 +1,38 @@
 import React, {Component} from 'react';
-import '../style/Styles.css';
-import fef from '../Inicio/Home'
+import '../../style/Styles.css';
 import { Link } from 'react-router-dom';
 
-function vizualizacion () {
+function Remove (){
     return (
-        <div className= "Modification">
+        <div className = "Remove">
             <div class="sidebar">
+                <div className="sidebar-brand">
+                    <h2><span className="Inventario"></span> <span>Administración de usuarios</span></h2>
+                </div>
 
-                <div class="sidebar-brand">
-               <h2><span className="Inventario"></span> <span>Administración de usuarios</span></h2>
-              </div>
-
-              <div className="sidebar-menu">
-                  <ul>
-                    <li>
-                       <Link to="./Vizualizacion" class="active"><img src="../img/icon/table_view_black_24dp.svg" /><span class="home"></span>
-                       <span>Visualizacion</span></Link>
-                    </li>
-                    <li>
-                       <Link to="./Create" ><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span class="product"></span>
-                       <span>Creación</span></Link>
-                    </li>
-                    <li>
-                       <Link to="./Modification"><img src="../img/icon/edit_white_24dp.svg" /><span class="salesman"></span>
-                       <span>Modificacón</span></Link>
-                    </li>
-                    <li>
-                       <Link to="./Remove"><img src="../img/icon/delete_white_24dp.svg" /><span class="stock"></span>
-                       <span>Eliminación</span></Link>
-                    </li>
-                    <li>
-                       <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span class="home"></span>
-                       <span>Inicio</span></Link>
-                    </li>
-                  </ul>
+                <div className="sidebar-menu">
+                    <ul>
+                        <li>
+                            <Link to="./Vizualizacion"><img src="../img/icon/table_view_white_24dp.svg" /><span className="home"></span>
+                            <span>Visualizacion</span></Link>
+                        </li>
+                        <li>
+                            <Link to="./Create" ><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span className="product"></span>
+                            <span>Creación</span></Link>
+                        </li>
+                        <li>
+                            <Link to="./Modification"><img src="../img/icon/edit_white_24dp.svg" /><span className="salesman"></span>
+                            <span>Modificacón</span></Link>
+                        </li>
+                        <li>
+                            <Link to="./Remove"className="active"><img src="../img/icon/delete_black_24dp.svg" /><span className="stock"></span>
+                            <span>Eliminación</span></Link>
+                        </li>
+                        <li>
+                            <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span className="home"></span>
+                            <span>Inicio</span></Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -59,6 +57,7 @@ function vizualizacion () {
                 </header>
 
                 <main>
+
                     <table class="table">
                         <thead>
                             <tr>
@@ -69,6 +68,7 @@ function vizualizacion () {
                                 <td scope="col">Correo electronico</td>
                                 <td scope="col">Numero de telefono</td>
                                 <td scope="col">Rol del sistema</td>
+                                <td scope="col">Eliminar</td>
                            </tr>
                         </thead>
 
@@ -81,6 +81,7 @@ function vizualizacion () {
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -91,6 +92,7 @@ function vizualizacion () {
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -101,6 +103,7 @@ function vizualizacion () {
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -111,6 +114,7 @@ function vizualizacion () {
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3004355</td>
                                 <td>mercante</td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -121,6 +125,7 @@ function vizualizacion () {
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>venta</td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -131,6 +136,7 @@ function vizualizacion () {
                                 <td>Mark_Otto@geef.com</td>
                                 <td>30145352</td>
                                 <td>vendedor</td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
 
                             <tr>
@@ -141,20 +147,21 @@ function vizualizacion () {
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3005953</td>
                                 <td>adm</td>
+                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
                             </tr>
                         </tbody>
                     </table>
-                    <Link to="./Create"><button type="submit" class="btn btn-primary">Añadir usuario</button></Link>
-                    <Link to="./Modification"><button type="submit" class="btn btn-primary">Modificar usuario</button></Link>
-                    <Link to="./Remove"><button type="submit" class="btn btn-primary">Eliminar usuario</button></Link>
                 </main>
 
             </div>
 
         </div>
 
-    );
+        
 
+
+
+    );
 }
 
-export default vizualizacion;
+export default Remove;
