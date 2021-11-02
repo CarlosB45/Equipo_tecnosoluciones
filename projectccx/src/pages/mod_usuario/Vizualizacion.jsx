@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import '../../style/Styles.css';
+import 'style/Styles.css';
 import { Link } from 'react-router-dom';
+import images from 'images/index_img';
 
 function vizualizacion () {
     return (
@@ -14,25 +15,26 @@ function vizualizacion () {
               <div className="sidebar-menu">
                   <ul>
                     <li>
-                       <Link to="./Vizualizacion" class="active"><img src="../img/icon/table_view_black_24dp.svg" /><span class="home"></span>
+                       <Link to="Home"><img src={images.img_homew} /><span class="home"></span>
+                       <span>Inicio</span></Link>
+                    </li>
+                    <li>
+                       <Link to="Vizualizacion" class="active"><img src={images.img_tableviewb} /><span class="home"></span>
                        <span>Visualizacion</span></Link>
                     </li>
                     <li>
-                       <Link to="./Create" ><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span class="product"></span>
+                       <Link to="Create" ><img src={images.img_addcirclew} /><span class="product"></span>
                        <span>Creación</span></Link>
                     </li>
                     <li>
-                       <Link to="./Modification"><img src="../img/icon/edit_white_24dp.svg" /><span class="salesman"></span>
+                       <Link to="Modification"><img src={images.img_editw} /><span class="salesman"></span>
                        <span>Modificacón</span></Link>
                     </li>
                     <li>
-                       <Link to="./Remove"><img src="../img/icon/delete_white_24dp.svg" /><span class="stock"></span>
+                       <Link to="Remove"><img src={images.img_deletew} /><span class="stock"></span>
                        <span>Eliminación</span></Link>
                     </li>
-                    <li>
-                       <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span class="home"></span>
-                       <span>Inicio</span></Link>
-                    </li>
+                    
                   </ul>
                 </div>
             </div>
@@ -40,7 +42,7 @@ function vizualizacion () {
             <div className = "main-content">
                 <header>
                     <div>
-                        <img src="../img/logo.png" width="60px" height="60px"/>
+                        <img src={images.img_logo} width="60px" height="60px"/>
                     </div>
 
                     <div class="name-company">
@@ -49,7 +51,7 @@ function vizualizacion () {
                     </div>
 
                     <div class="user-wrapper">
-                    <img src="../img/icon/user.png" width="40px" height="40px" alt=""/>
+                    <img src={images.img_user} width="40px" height="40px" alt=""/>
                        <div>
                             <h4>Administrador</h4>
                           <small>Super Admin</small>
@@ -143,9 +145,9 @@ function vizualizacion () {
                             </tr>
                         </tbody>
                     </table>
-                    <Link to="./Create"><button type="submit" class="btn btn-primary">Añadir usuario</button></Link>
-                    <Link to="./Modification"><button type="submit" class="btn btn-primary">Modificar usuario</button></Link>
-                    <Link to="./Remove"><button type="submit" class="btn btn-primary">Eliminar usuario</button></Link>
+                    <Link to="Create"><button type="submit" class="btn btn-primary">Añadir usuario</button></Link>
+                    <Link to="Modification"><button type="submit" class="btn btn-primary">Modificar usuario</button></Link>
+                    <Link to="Remove"><button type="submit" class="btn btn-primary">Eliminar usuario</button></Link>
                 </main>
 
             </div>

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import '../../style/Styles.css';
+import 'style/Styles.css';
 import { Link } from 'react-router-dom';
 import { Button, Modal, ModalBody, ModalHeader, ModalFooter, FormGroup, Input, Label, Select} from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import images from 'images/index_img';
 
 const data = [
   {id: 1 ,nombre: "Mark Otto", genero: "masculino", identificacion: "cedula de ciudadania",n_identificacion: 214214,correo: "Mark_Otto@geef.com",telefono: 4543345, rol: "adm"},
@@ -38,25 +38,26 @@ abrirmodal=()=>{
               <div className="sidebar-menu">
                   <ul>
                     <li>
-                       <Link to="./Vizualizacion"><img src="../img/icon/table_view_white_24dp.svg" /><span className="home"></span>
+                       <Link to="Home"><img src={images.img_homew} /><span className="home"></span>
+                       <span>Inicio</span></Link>
+                    </li>
+                    <li>
+                       <Link to="Vizualizacion"><img src={images.img_tableview} /><span className="home"></span>
                        <span>Visualizacion</span></Link>
                     </li>
                     <li>
-                       <Link to="./Create"><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span className="product"></span>
+                       <Link to="Create"><img src={images.img_addcirclew} /><span className="product"></span>
                        <span>Creación</span></Link>
                     </li>
                     <li>
-                       <Link to="./Modification" className="active"><img src="../img/icon/edit_black_24dp.svg" /><span className="salesman"></span>
-                       <span>Modificacón</span></Link>
+                       <Link to="Modification" className="active"><img src={images.img_editb} /><span className="salesman"></span>
+                       <span>Modificación</span></Link>
                     </li>
                     <li>
-                       <Link to="./Remove"><img src="../img/icon/delete_white_24dp.svg" /><span className="stock"></span>
+                       <Link to="Remove"><img src={images.img_deletew} /><span className="stock"></span>
                        <span>Eliminación</span></Link>
                     </li>
-                    <li>
-                       <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span className="home"></span>
-                       <span>Inicio</span></Link>
-                    </li>
+                   
                   </ul>
                 </div>
             </div>
@@ -64,7 +65,7 @@ abrirmodal=()=>{
             <div className = "main-content">
                 <header>
                     <div>
-                        <img src="../img/logo.png" width="60px" height="60px"/>
+                        <img src={images.img_logo} width="60px" height="60px"/>
                     </div>
 
                     <div className="name-company">
@@ -73,7 +74,7 @@ abrirmodal=()=>{
                     </div>
 
                     <div className="user-wrapper">
-                    <img src="../img/icon/user.png" width="40px" height="40px" alt=""/>
+                    <img src={images.img_user} width="40px" height="40px" alt=""/>
                        <div>
                             <h4>Administrador</h4>
                           <small>Super Admin</small>
@@ -109,7 +110,7 @@ abrirmodal=()=>{
                                     <td>{elemento.correo}</td>
                                     <td>{elemento.telefono}</td>
                                     <td>{elemento.rol}</td>
-                                    <td><button color ="success" onClick={this.abrirmodal}><img src="../img/icon/edit_black_24dp.svg"/></button></td>
+                                    <td><button color ="success" onClick={this.abrirmodal}><img src={images.img_editb}/></button></td>
                                 </tr>
                             ))}
                         </tbody>

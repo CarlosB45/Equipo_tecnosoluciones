@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import '../../style/Styles.css';
+import 'style/Styles.css';
 import { Link } from 'react-router-dom';
+import images from 'images/index_img';
 
 function Create (){
     return(
@@ -12,26 +13,28 @@ function Create (){
 
                 <div className="sidebar-menu">
                     <ul>
+                        
+                         <li>
+                            <Link to="Home"><img src={images.img_homew} /><span className="home"></span>
+                            <span>Inicio</span></Link>
+                        </li>
                         <li>
-                            <Link to="./Vizualizacion"><img src="../img/icon/table_view_white_24dp.svg" /><span className="home"></span>
+                            <Link to="Vizualizacion"><img src={images.img_tableview} /><span className="home"></span>
                             <span>Visualizacion</span></Link>
                         </li>
                         <li>
-                            <Link to="./Create" className="active"><img src="../img/icon/add_circle_outline_black_24dp.svg" /><span className="product"></span>
+                            <Link to="Create" className="active"><img src={images.img_addcircleb} /><span className="product"></span>
                             <span>Creación</span></Link>
                         </li>
                         <li>
-                            <Link to="./Modification"><img src="../img/icon/edit_white_24dp.svg" /><span className="salesman"></span>
-                            <span>Modificacón</span></Link>
+                            <Link to="Modification"><img src={images.img_editw} /><span className="salesman"></span>
+                            <span>Modificación</span></Link>
                         </li>
                         <li>
-                            <Link to="./Remove"><img src="../img/icon/delete_white_24dp.svg" /><span className="stock"></span>
+                            <Link to="Remove"><img src={images.img_deletew} /><span className="stock"></span>
                             <span>Eliminación</span></Link>
                         </li>
-                        <li>
-                            <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span className="home"></span>
-                            <span>Inicio</span></Link>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -39,7 +42,7 @@ function Create (){
             <div className="main-content">
                 <header>
                     <div>
-                        <img src="../img/logo.png" width="60px" height="60px"/>
+                        <img src={images.img_logo} width="60px" height="60px"/>
                     </div>
 
                     <div className="name-company">
@@ -47,7 +50,7 @@ function Create (){
                     </div>
 
                     <div className="user-wrapper">
-                        <img src="../img/icon/user.png" width="40px" height="40px" alt=""/>
+                        <img src={images.img_user} width="40px" height="40px" alt=""/>
                         <p><h4>Administrador</h4>
                         <small>Super Admin</small></p>
                     </div>

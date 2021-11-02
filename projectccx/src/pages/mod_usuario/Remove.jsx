@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import '../../style/Styles.css';
+import 'style/Styles.css';
 import { Link } from 'react-router-dom';
+import images from 'images/index_img';
 
 function Remove (){
     return (
@@ -13,25 +14,27 @@ function Remove (){
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to="./Vizualizacion"><img src="../img/icon/table_view_white_24dp.svg" /><span className="home"></span>
+                            <Link to="Home"><img src={images.img_homew} /><span className="home"></span>
+                            <span>Inicio</span></Link>
+                        </li>
+
+                        <li>
+                            <Link to="Vizualizacion"><img src={images.img_tableview} /><span className="home"></span>
                             <span>Visualizacion</span></Link>
                         </li>
                         <li>
-                            <Link to="./Create" ><img src="../img/icon/add_circle_outline_white_24dp.svg" /><span className="product"></span>
+                            <Link to="Create" ><img src={images.img_addcirclew}  /><span className="product"></span>
                             <span>Creación</span></Link>
                         </li>
                         <li>
-                            <Link to="./Modification"><img src="../img/icon/edit_white_24dp.svg" /><span className="salesman"></span>
+                            <Link to="Modification"><img src={images.img_editw} /><span className="salesman"></span>
                             <span>Modificacón</span></Link>
                         </li>
                         <li>
-                            <Link to="./Remove"className="active"><img src="../img/icon/delete_black_24dp.svg" /><span className="stock"></span>
+                            <Link to="Remove"className="active"><img src={images.img_editb} /><span className="stock"></span>
                             <span>Eliminación</span></Link>
                         </li>
-                        <li>
-                            <Link to="./Home"><img src="../img/icon/home_white_24dp.svg" /><span className="home"></span>
-                            <span>Inicio</span></Link>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -39,7 +42,7 @@ function Remove (){
             <div className = "main-content">
                 <header>
                     <div>
-                        <img src="../img/logo.png" width="60px" height="60px"/>
+                        <img src={images.img_logo} width="60px" height="60px"/>
                     </div>
 
                     <div class="name-company">
@@ -48,7 +51,7 @@ function Remove (){
                     </div>
 
                     <div class="user-wrapper">
-                    <img src="../img/icon/user.png" width="40px" height="40px" alt=""/>
+                    <img src={images.img_user} width="40px" height="40px" alt=""/>
                        <div>
                             <h4>Administrador</h4>
                           <small>Super Admin</small>
@@ -81,7 +84,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
+                                <td><Link to =""><img src={images.img_deleteb}/></Link></td>
                             </tr>
 
                             <tr>
@@ -92,7 +95,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
+                                <td><Link to =""><img src={images.img_deleteb}/></Link></td>
                             </tr>
 
                             <tr>
@@ -103,7 +106,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>adm</td>
-                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
+                                <td><Link to =""><img src={images.img_deleteb}/></Link></td>
                             </tr>
 
                             <tr>
@@ -114,7 +117,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3004355</td>
                                 <td>mercante</td>
-                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
+                                <td><Link to =""><img src={images.img_deleteb}/></Link></td>
                             </tr>
 
                             <tr>
@@ -125,7 +128,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>4543345</td>
                                 <td>venta</td>
-                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
+                                <td><Link to =""><img src={images.img_deleteb}/></Link></td>
                             </tr>
 
                             <tr>
@@ -136,7 +139,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>30145352</td>
                                 <td>vendedor</td>
-                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
+                                <td><Link to =""><img src={images.img_deleteb}/></Link></td>
                             </tr>
 
                             <tr>
@@ -147,7 +150,7 @@ function Remove (){
                                 <td>Mark_Otto@geef.com</td>
                                 <td>3005953</td>
                                 <td>adm</td>
-                                <td><Link to =""><img src="../img/icon/delete_black_24dp.svg"/></Link></td>
+                                <td><Link to =""><img src={images.img_deleteb}/></Link></td>
                             </tr>
                         </tbody>
                     </table>

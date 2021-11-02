@@ -1,8 +1,7 @@
 import React from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
-import '../style/Styles.css';
-import images from '../../src/images/index_img';
-
+import 'style/Styles.css';
+import images from 'images/index_img';
+import {Link} from 'react-router-dom';
 
 function Salesrecord () {
     return(
@@ -16,24 +15,24 @@ function Salesrecord () {
             <div className="sidebar-menu">
                 <ul>
                     <li>
-                        <a href="../index.html" className="product">
-                        <img src={images.img_createw} width="30px" height="30px" alt=""/><span>Inicio</span></a>
+                        <Link to="Home" className="product">
+                        <img src={images.img_createw} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
                     </li>
                     <li>
-                        <a href="Consulta de ventas" className="product">
-                        <img src={images.img_searchw} width="30px" height="30px" alt=""/>Consulta de ventas</a>
+                        <Link to="Inquirysales" className="product">
+                        <img src={images.img_searchw} width="30px" height="30px" alt=""/>Consulta de ventas</Link>
                     </li>
                     <li>
-                        <a href="reg_vta.html" className="active"><span className="home"></span>
-                        <img src={images.img_saveb} width="30px" height="30px" alt=""/>Registro de ventas</a>
+                        <Link to="Salesrecord" className="active"><span className="home"></span>
+                        <img src={images.img_saveb} width="30px" height="30px" alt=""/>Registro de ventas</Link>
                     </li>
                     <li>
-                        <a href="cons_ind.html"><span className="product"></span>
-                        <img src={images.img_searchw} width="30px" height="30px" alt=""/>Consulta Individual</a>
+                        <Link to="Indivsearch"><span className="product"></span>
+                        <img src={images.img_searchw} width="30px" height="30px" alt=""/>Consulta Individual</Link>
                     </li>
                     <li>
-                        <a href="md_rg_venta.html"><span className="salesman"></span>
-                        <img src={images.img_createw} width="30px" height="30px" alt=""/>Modificación de ventas</a>
+                        <Link to="Salesmodif"><span className="salesman"></span>
+                        <img src={images.img_createw} width="30px" height="30px" alt=""/>Modificación de ventas</Link>
                     </li>
                 </ul>
             </div>
