@@ -16,8 +16,8 @@ function Edicionproductos () {
                 <div className="sidebar-menu">
                     <ul>
                     <li>
-                            <Link to ="Iniciomodulos" ><span className="home"></span>
-                            <span>Modulo de Productos</span></Link>
+                            <Link to ="Home" ><span className="home"><img src= {images.img_homew}/></span>
+                            <span>Inicio</span></Link>
                         </li>
                         <li>
                             <Link to="Registerproduct" ><span className="product"><img src= {images.img_addcirclew}/></span>
@@ -31,11 +31,7 @@ function Edicionproductos () {
                             <Link to="Edicionproductos" className="active"><img src= {images.img_editb}/><span className="stock"></span>
                             <span>Edición de productos</span></Link>
                         </li>
-                        <li className="list__item list__item--click">
-                            <div className="list__button list__button--click">
-                                <Link to="Iniciomodulos" className="nav__link"><img src={images.img_return}/>Volver</Link>
-                            </div>
-                        </li>
+
                     </ul>
                 </div>
             </div>

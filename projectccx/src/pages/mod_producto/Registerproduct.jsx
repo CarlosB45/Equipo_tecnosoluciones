@@ -15,8 +15,8 @@ function Registerproduct () {
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to ="Iniciomodulos" ><span className="home"></span>
-                            <span>Modulo de Productos</span></Link>
+                            <Link to ="Home" ><span className="home"><img src= {images.img_homew}/></span>
+                            <span>Inicio</span></Link>
                         </li>
                         <li>
                             <Link to="Registerproduct" className="active"><img src= {images.img_addcircleb}/><span className="product"></span>

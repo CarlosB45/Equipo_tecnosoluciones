@@ -23,8 +23,12 @@ function Home (){
                         </li>
 
                         <li>
-                            <Link to ="Iniciomodulos"><img src={images.img_storew} /><span className="product"></span>
+                            <Link to ="Registerproduct"><img src={images.img_storew} /><span className="product"></span>
                             <span>Productos</span></Link>
+                        </li>
+                        <li>
+                            <Link to ="Invrecord"><img src={images.img_inventoryw} /><span className="product"></span>
+                            <span>Inventarios</span></Link>
                         </li>
                         <li>
                             <Link to="ConsulVendedor"><span className="salesman"><img src={images.img_users} /></span>

@@ -16,9 +16,8 @@ function Iniciomodulos () {
                  <div class="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to="" class="active" ><span class="home" ></span>
-                            <img src={images.img_homeb} class="list__img"/>
-                            <span>Módulo de Productos</span></Link>
+                        <Link to ="Home" ><span className="home"><img src= {images.img_homew}/></span>
+                            <span>Inicio</span></Link>
                         </li>
                         <li class="list__item list__item--click">
                             <div class="list__button list__button--click">

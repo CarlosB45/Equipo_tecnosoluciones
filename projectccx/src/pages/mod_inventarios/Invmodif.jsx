@@ -4,7 +4,7 @@ import 'style/Styles.css';
 import images from 'images/index_img';
 
 
-function Invrecord () {
+function Invmodif () {
     return(
         <>
         <div>
@@ -15,16 +15,16 @@ function Invrecord () {
             </div>
             <div className="sidebar-menu">
                 <li>
-                    <a href="Iniciomodulos" className="product">
+                    <a href="Home" className="product">
                     <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></a>
                 </li>
                 <li>
-                    <a href= "Invrecord" className="active"><span className="home"></span>
-                    <img src={images.img_saveb} width="30px" height="30px" alt=""/>Registro de inventario</a>
+                    <a href= "Invrecord"className="product"><span className="product"></span>
+                    <img src={images.img_savew} width="30px" height="30px" alt=""/>Registro de inventario</a>
                 </li>
                 <li>
-                    <a href="Invmodif" className="product"><span className="product"></span>
-                    <img src={images.img_editw} width="30px" height="30px" alt=""/>Modificación de inventario</a>
+                    <a href=  "Invmodif" className="active"><span className="home"></span>
+                    <img src={images.img_editb} width="30px" height="30px" alt=""/>Modificación de inventario</a>
                 </li>
                 <li>
                     <a href="InquiryInv"><span className="product"></span>
@@ -53,7 +53,7 @@ function Invrecord () {
             <div className="container"> 
                 <div className="row"> 
                     <div className="title">
-                        <h2>Registro de inventario</h2>
+                        <h2>Modificación de registro de inventario</h2>
                     </div>
                 </div>
             </div>
@@ -62,33 +62,23 @@ function Invrecord () {
             <div className="main-container">
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Producto</label>
-                    <input type="text" className="formscontrol" placeholder="Ingrese nombre del producto" required autocomplete></input>
+                    <input type="text" className="formscontrol" placeholder="Modifique nombre del producto" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Lote</label>
-                    <input type="text" className="formscontrol" placeholder="Ingrese lote del producto" required autocomplete></input>
-                </div>
-                <div className="row justify-content-center">
-                    <div className="text-center">
-                        <form action="#">
-                            <div className="form-group">
-                                <label className="labelform justify-content-center">Fecha de recepción</label>
-                                <input type="datetime-local" className="formscontrol"></input>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Proveedor</label>
-                    <input type="text" className="formscontrol" placeholder="Ingrese proveedor" required autocomplete></input>
+                    <input type="text" className="formscontrol" placeholder="Modifique lote del producto" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Conteo de unidades</label>
-                    <input type="number" className="formscontrol" placeholder="Ingrese número de unidades de producto" required autocomplete></input>
+                    <input type="number" className="formscontrol" placeholder="Modifique número de unidades de producto" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Novedades</label>
-                    <input type="text" className="formscontrol" placeholder="Ingrese cualquier novedad que se presente con este lote" required autocomplete></input>
+                    <input type="text" className="formscontrol" placeholder="Ingrese motivo de modificación" required autocomplete></input>
+                </div>
+                <div className="row justify-content-center">
+                    <label className="labelform justify-content-center">Almacenamiento</label>
+                    <input type="text" className="formscontrol" placeholder="Modifique ubicación final del lote" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Imagen del producto</label>
@@ -96,10 +86,7 @@ function Invrecord () {
                         <button type="button" onclick= "aceptar();" className="btn btn-outline-primary" id="butt_cons_vend">Cargar imagen</button>
                     </div>
                 </div>
-                <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Almacenamiento</label>
-                    <input type="text" className="formscontrol" placeholder="Ingrese ubicación final del lote" required autocomplete></input>
-                </div>
+                <br/>
                 <div className="row justify-content-center">
                     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                         <button type="button" onclick= "aceptar();" className="btn btn-outline-primary" id="butt_cons_vend">Guardar información</button>
@@ -113,4 +100,4 @@ function Invrecord () {
     }
     
     
-    export default Invrecord;
+    export default Invmodif;
