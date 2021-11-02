@@ -493,7 +493,7 @@ main-container{
 
 table {
     background-color: #f1f5f9;
-    text-align: center;
+    text-align: right;
     border-collapse: collapse;
     width: 100%;
 }

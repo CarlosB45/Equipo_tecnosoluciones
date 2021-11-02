@@ -32,8 +32,7 @@ function Listproducts () {
                         </li>
                         <li className="list__item list__item--click">
                             <div className="list__button list__button--click">
-                                <Link to="./Iniciomodulos" className="nav__link">Volver</Link>
-                                <img src={images.return_white} className="list__return"/>
+                                <Link to="./Iniciomodulos" className="nav__link"><img src={images.img_return}/>Volver</Link>
                             </div>
                         </li>
                     </ul>
