@@ -1,4 +1,5 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import 'style/Styles.css';
 import images from 'images/index_img';
 
@@ -40,7 +41,7 @@ function Invmodif () {
                 <h2><span>Tecnosoluciones</span></h2>
             </div>
             <div className="user-wrapper">
-                <img src={images.img_icon} width="40px" height="40px" alt=""/>
+                <img src={images.img_user} width="40px" height="40px" alt=""/>
             <div/>
             <div>
                 <h4>Administrador</h4>

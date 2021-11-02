@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import 'style/Styles.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'style/Stylesv.css';
 import images from 'images/index_img';
 import {button} from 'reactstrap';
 import {Link, NavLink} from 'react-router-dom';
@@ -26,7 +27,7 @@ function Home (){
                             <span>Productos</span></Link>
                         </li>
                         <li>
-                            <Link to="Vizualizacion"><span className="salesman"><img src={images.img_users} /></span>
+                            <Link to="ConsulVendedor"><span className="salesman"><img src={images.img_users} /></span>
                             <span>Comerciales</span></Link>
                         </li>
                         <li>

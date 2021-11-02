@@ -17,7 +17,7 @@ function Salesmodif () {
                 <ul>
                     <li>
                         <Link to="Home" className="product">
-                        <img src={images.img_createw} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
+                        <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
                     </li>
                     <li>
                         <Link to="Inquirysales" className="product">

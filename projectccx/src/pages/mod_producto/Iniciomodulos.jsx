@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import 'style/Styles.css';
 import {Link} from 'react-router-dom';
 import images from 'images/index_img';
@@ -64,18 +65,20 @@ function Iniciomodulos () {
             </div>
             <header>
                 <div>
-                    <img src="../img/logo.png" width="60px" height="60px"/>
+                    <img src={images.img_logo} width="60px" height="60px"/>
                 </div>
                 <div className="name-company">
                     <h2><span>Tecnosoluciones</span></h2>
                 </div>
                 <div className="user-wrapper">
-                    <img src="../img/icon/user.png" width="40px" height="40px" alt=""/>
+                    <img src={images.img_user} width="40px" height="40px" alt=""/>
                     <p><h4>Administrador</h4>
                     <small>Super Admin</small></p>
                 </div>
             </header>
-        </div> 
+            <script src = "./main.js"></script>
+        </div>
+    
 
     );
 }

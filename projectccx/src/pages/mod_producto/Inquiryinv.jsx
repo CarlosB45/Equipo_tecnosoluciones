@@ -1,4 +1,5 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import 'style/Styles.css';
 import images from 'images/index_img';
 
@@ -35,13 +36,13 @@ function Inquiryinv () {
 
         <header>
             <div>
-                <img src={images.img_log} width="60px" height="60px" alt=""/>
+                <img src={images.img_logo} width="60px" height="60px" alt=""/>
             </div>
             <div className="name-company">
                 <h2><span>Tecnosoluciones</span></h2>
             </div>
             <div className="user-wrapper">
-                <img src={images.img_icon} width="40px" height="40px" alt=""/>
+                <img src={images.img_user} width="40px" height="40px" alt=""/>
             <div/>
             <div>
                 <h4>Administrador</h4>

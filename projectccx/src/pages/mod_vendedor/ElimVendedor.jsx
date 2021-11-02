@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React, {Component} from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import '../../style/Styles.css';
-import imag from '../../images/index_img';
+import 'style/Stylesv.css';
+import imag from 'images/index_img';
+import {Link} from 'react-router-dom';
 //<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
 function ConsulVendedor(){
@@ -24,20 +24,21 @@ function ConsulVendedor(){
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <a patc href="./ConsulVendedor.jsx"><img src={imag.img_searchw} width="30px" height="30px" /><span>Consultar Vendedores</span></a>
+                            <Link to="Home"><img src={imag.img_homew} width="30px" height="30px"/><span>Inicio</span></Link>
                         </li>
                         <li>
-                            <a href="./ModVendedor.jsx"><img src={imag.img_savew} width="30px" height="30px"/><span>Crear Vendedores</span></a>
+                            <Link to="ConsulVendedor"><img src={imag.img_searchw} width="30px" height="30px" /><span>Consultar Vendedores</span></Link>
                         </li>
                         <li>
-                            <a href="./IngreVendedor.jsx"><img src={imag.img_createw} width="30px" height="30px"/><span>Modificar Vendedores</span></a>
+                            <Link to="ModVendedor"><img src={imag.img_savew} width="30px" height="30px"/><span>Crear Vendedores</span></Link>
                         </li>
                         <li>
-                            <a href="./ElimVendedor.jsx" className="active"><img src={imag.img_deleteb} width="30px" height="30px"/><span>Eliminar Vendedores</span></a>
+                            <Link to="IngreVendedor"><img src={imag.img_createw} width="30px" height="30px"/><span>Modificar Vendedores</span></Link>
                         </li>
                         <li>
-                            <a href={"../../index.js"}><img src={imag.img_homew} width="30px" height="30px"/><span>Inicio</span></a>
+                            <Link to="ElimVendedor.jsx" className="active"><img src={imag.img_deleteb} width="30px" height="30px"/><span>Eliminar Vendedores</span></Link>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -45,7 +46,7 @@ function ConsulVendedor(){
             <div className="main-content">
                 <header>
                     <div>
-                        <img src={imag.img_log} width="60px" height="60px"/>
+                        <img src={imag.img_logo} width="60px" height="60px"/>
                     </div>
                     <div className="name-company">
                         <h2><span>Tecnosoluciones</span></h2>
@@ -115,7 +116,7 @@ function ConsulVendedor(){
                                 <td>Paga Todo</td>
                                 <td>3003113232</td>
                                 <td>Bogotá</td>
-                                <td><a href="" onclick="eliminar();"><img src={imag.img_deleteb}/></a></td>
+                                <td><Link to="" onclick="eliminar();"><img src={imag.img_deleteb}/></Link></td>
                                 
                             </tr>
                             <tr>
@@ -125,7 +126,7 @@ function ConsulVendedor(){
                                 <td>Interrapidisimo</td>
                                 <td>3203158789</td>
                                 <td>Bogotá</td>
-                                <td><a href="" onclick="eliminar();"><img src={imag.img_deleteb}/></a></td>
+                                <td><Link to="" onclick="eliminar();"><img src={imag.img_deleteb}/></Link></td>
                             </tr>
                             <tr>
                                 <td>Cedula Extranjerida</td>
@@ -134,7 +135,7 @@ function ConsulVendedor(){
                                 <td>Interrapidisimo</td>
                                 <td>3168952120</td>
                                 <td>Bogotá</td>
-                                <td><a href="" onclick="eliminar();"><img src={imag.img_deleteb} onclick="eliminar();"/></a></td>
+                                <td><Link to="" onclick="eliminar();"><img src={imag.img_deleteb} onclick="eliminar();"/></Link></td>
                             </tr>
 
                         </tbody>

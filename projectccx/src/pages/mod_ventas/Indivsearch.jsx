@@ -1,4 +1,5 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import 'style/Styles.css';
 import images from 'images/index_img';
 import {Link} from 'react-router-dom';
@@ -17,7 +18,7 @@ function Indivsearch () {
                 <ul>
                     <li>
                         <Link to="Home" className="product">
-                        <img src={images.img_createw} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
+                        <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
                     </li>
                     <li>
                         <Link to="Inquirysales" className="product">

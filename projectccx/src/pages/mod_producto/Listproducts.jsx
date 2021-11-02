@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import 'style/Styles.css';
 import images from 'images/index_img';
 import {Link} from 'react-router-dom';
