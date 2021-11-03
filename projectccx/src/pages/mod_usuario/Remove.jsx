@@ -54,7 +54,7 @@ class Remove extends React.Component{
                             <span>Modificacón</span></Link>
                         </li>
                         <li>
-                            <Link to="Remove"className="active"><img src={images.img_editb} /><span className="stock"></span>
+                            <Link to="Remove"className="active"><img src={images.img_deleteb} /><span className="stock"></span>
                             <span>Eliminación</span></Link>
                         </li>
                        
