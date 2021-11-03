@@ -91,6 +91,7 @@ function Home (){
                         </div>
                     </div>
                 </div>
+                <hr />
 
                 <div class="recent-grid">
                     <div class="projects">
@@ -100,10 +101,12 @@ function Home (){
                                 <button>Mostrar todo <span class="las la-arrow-right">
                                 </span></button>
                             </div>
-        
-                <table class="table">
-                    <thead>
-                        <tr>
+
+                            <div class="card-body">
+                                <div class="table">
+                                    <table width="100%">
+                                    <thead>
+                                            <tr>
                                                <td>Nombre del comercial</td>
                                                <td>Total Ventas</td>
                                                <td>Ciudad</td>
@@ -214,7 +217,7 @@ function Home (){
                                 </div>
                             </div>
                         </div>
-                   
+                    </div>
 
                     <div class="productos">
                         <div class="card">
@@ -272,7 +275,7 @@ function Home (){
                                     </div>
                                 </div>
                             </div>                            
-                    
+                        </div>
                     </div>                
                 </div>
             </main>

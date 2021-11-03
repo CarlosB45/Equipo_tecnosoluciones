@@ -193,8 +193,6 @@ main {
 
 .card {
     height: max-content;
-    width: S;
-    padding: 20px 21rem;
 }
 .cards {
     display: grid;
@@ -259,13 +257,13 @@ main {
 }
 
 .card-header {
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .card-header {
     border-bottom: 1px solid #f0f0f0;
     text-align: center;
-    width: 1020px;
+    width: 100px;
     height: 80px;
     font-family: Montserrat;
     font-style: normal;
@@ -280,7 +278,7 @@ main {
     border-radius: 10px;
     color: #fff;
     font-size: .8rem;
-    padding: .5rem 1rem;
+    padding: 0rem 0rem;
     border: 1px solid var(--main-color);
 }
 

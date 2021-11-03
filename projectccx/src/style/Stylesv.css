@@ -191,11 +191,6 @@ main {
 
 /*configuracion de cuadros pantalla de inicio*/
 
-.card {
-    height: max-content;
-    width: S;
-    padding: 20px 21rem;
-}
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 6fr);
@@ -835,11 +830,6 @@ td img{
     min-height: calc(100vh - 100px);
 }
 
-.table-responsive1 {
-    width: 145%;
-    overflow-x: auto;
-    padding: 20px 21rem;
-}
 
 
 
