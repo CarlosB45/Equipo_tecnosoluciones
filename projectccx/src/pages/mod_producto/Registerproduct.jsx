@@ -30,11 +30,6 @@ function Registerproduct () {
                             <Link to="Edicionproductos"><span className="stock"><img src= {images.img_editw}/></span>
                             <span>Edición de productos</span></Link>
                         </li>
-                        <li className="list__item list__item--click">
-                            <div className="list__button list__button--click">
-                                <Link to="Iniciomodulos" className="nav__link"><img src={images.img_return}/>Volver</Link>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
