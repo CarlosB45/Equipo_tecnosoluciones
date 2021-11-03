@@ -29,10 +29,10 @@ function ConsulVendedor(){
                             <Link to="ConsulVendedor" ><img src={imag.img_searchw} width="30px" height="30px" /><span>Consultar Vendedores</span></Link>
                         </li>
                         <li>
-                            <Link to="ModVendedor" className="active"><img src={imag.img_saveb} width="30px" height="30px"/><span>Crear Vendedores</span></Link>
+                            <Link to="IngreVendedor" className="active"><img src={imag.img_saveb} width="30px" height="30px"/><span>Crear Vendedores</span></Link>
                         </li>
                         <li>
-                            <Link to="IngreVendedor" ><img src={imag.img_createw} width="30px" height="30px"/><span>Modificar Vendedores</span></Link>
+                            <Link to="ModVendedor" ><img src={imag.img_createw} width="30px" height="30px"/><span>Modificar Vendedores</span></Link>
                         </li>
                         <li>
                             <Link to="ElimVendedor" ><img src={imag.img_deletew} width="30px" height="30px"/><span>Eliminar Vendedores</span></Link>

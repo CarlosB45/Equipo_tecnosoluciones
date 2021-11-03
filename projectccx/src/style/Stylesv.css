@@ -766,12 +766,6 @@ td img{
     border: 2px solid #446a88dc;
 }
 
-.table-responsive {
-    display: table;
-    overflow-x: auto;
-    padding: 20px 21rem;
-}
-
 
 .boton{
     display: inline-flex;
