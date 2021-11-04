@@ -4,7 +4,6 @@ import 'style/Styles.css';
 import 'style/Stylesv.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Auth0Provider } from "@auth0/auth0-react"
 import Home from './pages/Inicio/Home'
 import Register from './pages/Inicio/Register'
 import Edicionproductos from './pages/mod_producto/Edicionproductos';
