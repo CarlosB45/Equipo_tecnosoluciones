@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(../images/icon/webimagen1.jpg);
+    background-image: url(webimagen1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     height: 1800px;
@@ -32,16 +32,16 @@ h2 {
 
 h3 {
     position: absolute;
-    width: 740px;
+    width: 800px;
     height: 331px;
-    left: 2px;
-    top: 100px;
+    left: 259px;
+    top: 20px;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
-    line-height: 8px;
+    line-height: 86px;
     color: #FFFFFF;
 }
 
@@ -50,10 +50,10 @@ h3 {
     padding: 30px;
     margin: auto;
     position: absolute;
-    width: 400px;
+    width: 611px;
     height: 95px;
     left: 180px;
-    top: 230px;
+    top: 250px;
     font-family: 'Calibri';
     color: white
 }
@@ -66,24 +66,22 @@ h3 {
     width: 611px;
     height: 95px;
     left: 180px;
-    top: 280px;
+    top: 320px;
     font-family: 'Calibri';
-    color: white;
-    border-radius: 20px;
+    color: white
 }
 
 .form-group3 {
 
-    padding: 20px;
+    padding: 30px;
+    margin: auto;
     position: absolute;
     width: 611px;
     height: 95px;
-    left: 190px;
-    top: 340px;
+    left: 294px;
+    top: 380px;
     font-family: 'Calibri';
-    color: white;
-    border-radius: 20px;
-    text-align: center;
+    color: white
 }
 
 .form-group4 {
@@ -93,12 +91,10 @@ h3 {
     position: absolute;
     width: 211px;
     height: 95px;
-    left: 80px;
+    left: 0px;
     top: 110px;
     font-family: 'Times New Roman', serif;
     font-size: 10;
-    border-radius: 20px;
-    color: white
 }
 
 .form-group5 {
@@ -106,13 +102,12 @@ h3 {
     padding: 30px;
     margin: auto;
     position: absolute;
-    width: 400px;
+    width: 611px;
     height: 95px;
     left: 180px;
     top: 180px;
     font-family: 'Calibri';
     color: white;
-    border-radius: 20px;
 }
 
 .identify {
@@ -120,14 +115,14 @@ h3 {
     padding: 10px;
     margin: auto;
     position: absolute;
-    width: 340px;
-    height: 45px;
+    width: 335px;
+    height: 48px;
     left: 210px;
-    top: 150px;
+    top: 140px;
     font-family: Montserrat;
-    font-size: 10;
+    font-size: 16;
     color: black;
-    border-radius: 20px;
+    border-radius: 4px;
     margin-bottom: 16px;
     border: 3px solid #A9D0F5;
     font-family: 'Calibri';
@@ -141,54 +136,42 @@ h3 {
     position: absolute;
     width: 120px;
     height: 45px;
-    left: 60px;
-    top: 80px;
+    left: 160px;
+    top: 230px;
     font-family: Montserrat;
     font-size: 12;
 }
 
 .new-account {
     padding:10px;
-    width: 311px;
+    margin: auto;
+    position: absolute;
+    width: 611px;
     height: 95px;
-    left: 1px;
-    top: 100px;
+    left: 224px;
+    top: 480px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 13px;
-    line-height: 6px;
+    line-height: 86px;
     color: #FFFFFF;
 }
-Link {
+a {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 170;
+    font-weight: 500;
     font-size: 12px;
-    line-height: 30px;
+    line-height: 86px;
     color: #CEE3F6;
 }
 
 .formcontrol {
-    width: 340px;
-    height: 40px;
+    width: 50%;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 3px solid #A9D0F5;
     font-family: 'Calibri';
     font-size: 18px;
-    border-radius: 20px;
-}
-
-.formscheck {
-    width: 340px;
-    height: 40px;
-    padding: 10px;
-    top:50px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    font-family: 'Calibri';
-    font-size: 18px;
-    
 }
