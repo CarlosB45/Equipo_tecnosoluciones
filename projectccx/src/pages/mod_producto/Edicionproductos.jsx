@@ -15,7 +15,7 @@ function Edicionproductos () {
 
                 <div className="sidebar-menu">
                     <ul>
-                    <li>
+                        <li>
                             <Link to ="Home" ><span className="home"><img src= {images.img_homew}/></span>
                             <span>Inicio</span></Link>
                         </li>

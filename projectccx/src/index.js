@@ -4,7 +4,9 @@ import 'style/Styles.css';
 import 'style/Stylesv.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Auth0Provider } from "@auth0/auth0-react"
 import Home from './pages/Inicio/Home'
+import Register from './pages/Inicio/Register'
 import Edicionproductos from './pages/mod_producto/Edicionproductos';
 import Editproduct from 'pages/mod_producto/Editproduct';
 import Fichaproducto from 'pages/mod_producto/Fichaproducto';
@@ -33,6 +35,7 @@ const App = () => (
   <BrowserRouter>
       <Switch>
           <Route  path = "/Home" component ={Home}/>
+          <Route  path = "/Register" component ={Register}/>
           <Route  path = "/Edicionproductos" component ={Edicionproductos}/>
           <Route  path = "/Editproduct" component ={Editproduct}/>
           <Route  path = "/Fichaproducto" component ={Fichaproducto}/>

@@ -1,4 +1,5 @@
 import logo from './logo.png';
+import background from './icon/webimagen1.jpg';
 import user from 'images/icon/user.png';
 import search_white    from 'images/icon/search_white_24dp.svg';
 import search_black    from 'images/icon/search_black_24dp.svg';
@@ -29,6 +30,7 @@ import visibilityb     from  'images/icon/visibility_black_24dp.svg';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     "img_logo"              : logo,
+    "img_background"        : background,
     "img_user"              : user,
     "img_searchw"           : search_white,
     "img_searchb"           : search_black,
