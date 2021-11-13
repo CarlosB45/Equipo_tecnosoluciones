@@ -16,7 +16,7 @@ function Inquiryinv () {
             </div>
             <div className="sidebar-menu">
                 <li>
-                    <a href="Iniciomodulos" className="product">
+                    <a href="Home" className="product">
                     <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></a>
                 </li>
                 <li>

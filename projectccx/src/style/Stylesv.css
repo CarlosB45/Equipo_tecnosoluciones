@@ -830,6 +830,11 @@ td img{
     min-height: calc(100vh - 100px);
 }
 
-
-
-
+.Fondo {
+    background-image: ".//images/icon/webimagenq.jpg";
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+}

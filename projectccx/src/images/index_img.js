@@ -1,5 +1,5 @@
 import logo from './logo.png';
-import background from './icon/webimagen1.jpg';
+import background from './icon/background.jpg';
 import user from 'images/icon/user.png';
 import search_white    from 'images/icon/search_white_24dp.svg';
 import search_black    from 'images/icon/search_black_24dp.svg';

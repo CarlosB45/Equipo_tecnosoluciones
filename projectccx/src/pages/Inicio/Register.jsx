@@ -1,14 +1,27 @@
-import React, {Component } from 'react';
+import React, {useState, useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import images from 'images/index_img';
 import {Link} from 'react-router-dom';
+import 'style/register.css';
+import { useAuth0 } from '@auth0/auth0-react';
 import {GoogleLogin} from 'react-google-login';
+import { text } from 'dom-helpers';
 
 
-function Register () {
+function Login () {
+    function responseGoogle(response){
+        console.log (response);
+    }
+
+
+
     return(
         <div className="Register">
-            <body>
+            
+                
+                <div className= "fondo">
+                    
+                    
                 <h3>Registrate</h3>
                         <select className ="identify" name="identificación">
                         <option value= "">Tipo de identificación</option>
@@ -35,19 +48,26 @@ function Register () {
                             <Link to="page-forgot-password.html">¿Olvidaste tu contraseña?</Link>
                         </div>
                         <div className="signup">
-                            <button type="submit" className="signup">Iniciar Sesión</button>
+                            <button type="submit" class="signup">Iniciar Sesión</button>
                         </div>
                         <div className="new-account">
-                        <p>¿No tienes una cuenta? <Link to = "./page-register.html"className="text-primary" >Crea una nueva cuenta</Link></p>
-                        </div>
+                            < Link to = "./page-register.html"className="text-primary" >Crea una nueva cuenta</Link></div>
+                            <GoogleLogin
+                                clientId="817299739432-6f87ik9hus03a3eog8gl959hm29gsgac.apps.googleusercontent.com"
+                                buttonText="Acceder con Google"
+                                onSuccess={responseGoogle}
+                                onFailure={responseGoogle}
+                                cookiePolicy={'single_host_origin'}
+                            />   
+                              
                 </div>
                 </div>    
-        </body>
+            </div>  
     </div>
 
 
     );
-
 }
 
-export default Register;
+
+export default Login;
