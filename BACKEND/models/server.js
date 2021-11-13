@@ -17,12 +17,10 @@ class Server {
     
     }
     
-    middleware(){
+    middlewares(){
         
         //CORS
-        
         this.app.use(cors())
-        
         
         //lectura y parseo
         this.app.use('express.json()')
@@ -33,9 +31,9 @@ class Server {
         routes(){
             this.app.use(this.usuariosPath, require ('../routes/usuarios'))
     }
-    
+
     listen(){
-        this.app.listen(this.port,()=>{
+        this.app.listen(this.port,() => {
             console.log("Servidor Conectado")
         })
     }
