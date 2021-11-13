@@ -1,16 +1,17 @@
-const {Router} = require('express')
+const { Router } = require('express')
 
-const {usuariosGet,
-       usuariosPost,
-       usuariosPut,
-       usuariosDelete,
-}=require('../controllers/usuarios')
+const { usuariosGet, 
+        usuariosDelete,
+        usuariosPost,
+        usuariosPut 
+    }=require('../controllers/usuarios')
 
-const router = Router()
+const router= Router()
 
-router.get('/', usuariosGet )
-router.post('/', usuariosPost )
-router.put('/:id', usuariosPut )
-router.delete('/:id', usuariosDelete )
+router.get('/', usuariosGet)
+router.post('/', usuariosPost)
+router.put('/:id', usuariosPut)
+router.delete('/:id', usuariosDelete)
 
-module.export= router
+
+module.exports= router

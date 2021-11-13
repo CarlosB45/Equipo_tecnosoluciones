@@ -1,37 +1,43 @@
 const { response, request } = require('express')
 
-const usuariosGet=(req=request, res=response)=>{
-    const usuario = req.body
+const usuariosGet = (req = request, res=response)=> {
+    // const usuario= req.body
     res.json({
-        msj: "estoy en usuarioGET"
+        msg:'GET'
     })
 }
 
-const usuariosPost=(req=request, res=response)=>{
-    const usuario = req.body
+const usuariosDelete= (req = request, res=response)=>{
+    // const usuario= req.body
     res.json({
-        msj: "estoy en usuarioPOST"
+        msg:'DEL'
+
     })
 }
 
-const usuariosPut=(req=request, res=response)=>{
-    const usuario = req.body
+const usuariosPost= (req, res)=>{
+    // const usuario= req.query
     res.json({
-        msj: "estoy en usuarioPUT"
+        msg:'POST'
     })
 }
 
-const usuariosDelete=(req=request, res=response)=>{
-    const usuario = req.body
+const usuariosPut= (req, res)=>{
+    // const usuario= req.query
     res.json({
-        msj: "estoy en usuarioDELETE"
+        msg:'PUT'
+
     })
 }
-//GET POST PUT DELETE
 
-module.exports={
-    usuariosGet,
-    usuariosPost,
-    usuariosPut,
+
+//GET POST PUT DELETE   CRUD
+
+
+
+module.exports = {
+    usuariosGet, 
     usuariosDelete,
+    usuariosPost,
+    usuariosPut
 }
