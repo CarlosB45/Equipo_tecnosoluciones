@@ -25,12 +25,15 @@ class Server {
         
         
         //lectura y parseo
-        
         this.app.use('express.json()')
-        //directorio 
-        publicothis.app.use(express.static('public'))}
-        routes(){this.app.use(this.usuariosPath, require ('../routes/usuarios'))
+
+        //directorio publico
+        this.app.use(express.static('public'))
     }
+        routes(){
+            this.app.use(this.usuariosPath, require ('../routes/usuarios'))
+    }
+    
     listen(){
         this.app.listen(this.port,()=>{
             console.log("Servidor Conectado")
