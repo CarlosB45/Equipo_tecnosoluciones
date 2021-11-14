@@ -2,18 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './/App';
-//import reportWebVitals from './reportWebVitals';
+import reportWebVitals from '*/reportWebVitals';
 import { Auth0Provider } from "@auth0/auth0-react";
 //import ConlVend from './pages/mod_vendedor/index'
 
 ReactDOM.render(
-  <Auth0Provider
-    domain="development-web.us.auth0.com"
-    clientId="eSPZYvuh7RhZAXUwooRNaIXcx9INmou8"
-    redirectUri={window.location.origin}
-  >
-    <App />
-  </Auth0Provider>,
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>,  
   document.getElementById('root')
 );
 
