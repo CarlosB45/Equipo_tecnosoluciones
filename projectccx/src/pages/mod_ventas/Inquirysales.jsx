@@ -50,13 +50,11 @@ function Inquirysales () {
             </div>
             <div className="user-wrapper">
                 <img src={images.img_user} width="40px" height="40px" alt=""/>
-            <div/>
-            <div>
-                <h4>Administrador</h4>
-                <small>Super Admin</small>
+                <p><h4>Administrador</h4>
+                <small>Super Admin</small></p>
             </div>
-        </div>
         </header>
+
         <main className="main-content"> 
             <div className="cards-c">
                 <div className="card-productos">
