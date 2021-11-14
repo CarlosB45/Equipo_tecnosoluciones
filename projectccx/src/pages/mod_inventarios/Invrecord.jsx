@@ -60,14 +60,21 @@ function Invrecord () {
             <br/>
                     
             <div className="main-container">
+
+                
                 <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Producto</label>
-                    <input type="text" className="formscontrol" placeholder="Ingrese nombre del producto" required autocomplete></input>
-                </div>
-                <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Lote</label>
+                    <label className="labelform justify-content-center">Categoria</label>
                     <input type="text" className="formscontrol" placeholder="Ingrese lote del producto" required autocomplete></input>
                 </div>
+                <div className="row justify-content-center">
+                    <label className="labelform justify-content-center">Código del producto</label>
+                    <input type="text" className="formscontrol" placeholder="Ingrese lote del producto" required autocomplete></input>
+                </div>
+                <div className="row justify-content-center">
+                    <label className="labelform justify-content-center">Nombre del Producto</label>
+                    <input type="text" className="formscontrol" placeholder="Ingrese nombre del producto" required autocomplete></input>
+                </div>
+                
                 <div className="row justify-content-center">
                     <div className="text-center">
                         <form action="#">
@@ -79,11 +86,15 @@ function Invrecord () {
                     </div>
                 </div>
                 <div className="row justify-content-center">
+                    <label className="labelform justify-content-center">Marca</label>
+                    <input type="text" className="formscontrol" placeholder="Ingrese proveedor" required autocomplete></input>
+                </div>
+                <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Proveedor</label>
                     <input type="text" className="formscontrol" placeholder="Ingrese proveedor" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Conteo de unidades</label>
+                    <label className="labelform justify-content-center">Unidades</label>
                     <input type="number" className="formscontrol" placeholder="Ingrese número de unidades de producto" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">

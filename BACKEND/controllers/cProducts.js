@@ -8,17 +8,22 @@ exports.getProducts = (req, res) => {
 
 exports.addProduct = (req, res) => {
   const productosAdd = new Producto({
-    title: req.body.title,
-    description: req.body.description,
-    price: req.body.price,
-    url: req.body.url,
+    
     categoria: req.body.categoria,
+    codigo: req.body.codigo,
+    nombre: req.body.nombre,
+    especificaciones: req.body.especificaciones,
+    marca: req.body.marca,
+    referencia: req.body.referencia,
+    valorunitario: req.body.valorunitario,
+    proveedor: req.body.proveedor,
+    almacenamiento: req.body.almacenamiento,
     disponible: req.body.disponible,
   });
 
   productosAdd.save().then((createdProduct) => {
     console.log(createdProduct);
-    res.status(201).json("Created satisfied");
+    res.status(201).json("Creado exitosamente");
   });
 };
 
@@ -45,7 +50,7 @@ exports.deleteProduct = (req, res) => {
         { _id: req.params.id },
         req.body,
         function (err) {
-          res.status(200).json("Deleted");
+          res.status(200).json("Eliminado");
         }
       );
     } else {
@@ -61,11 +66,11 @@ exports.updateProductById = (req, res) => {
         { _id: req.params.id },
         req.body,
         function (err) {
-          res.status(200).json("Update");
+          res.status(200).json("Actualizado");
         }
       );
     } else {
-      res.status(404).json("No Update");
+      res.status(404).json("No actualizado");
     }
   });
 };
