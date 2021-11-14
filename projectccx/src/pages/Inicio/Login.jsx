@@ -3,9 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import images from 'images/index_img';
 import {Link} from 'react-router-dom';
 import 'style/register.css';
-import { useAuth0 } from '@auth0/auth0-react';
 import {GoogleLogin} from 'react-google-login';
-import { text } from 'dom-helpers';
 
 
 function Login () {
@@ -17,39 +15,43 @@ function Login () {
         <div className="Login">
          <div className= "fondo">
           <body>
-            <h2>Descubre las soluciones
-            óptimas para tu empresa</h2>
-            <div class="form-group1">
-                <input type="email" class="formcontrol" value="Ingrese su correo electrónico"/>
+            <h2>Descubre las soluciones<br/>
+            óptimas para tu empresa<br/></h2>
+            <h3>Iniciar Sesión</h3>
+            <div className="form-group1">
+                <input type="email" className="formcontrol" value="Ingrese su correo electrónico"/>
             </div>
-            <div class="form-group2">
-                <input type="Contraseña" class="formcontrol" value="Ingrese su contraseña"/>
+            <div className="form-group2">
+                <input type="Contraseña" className="formcontrol" value="Ingrese su contraseña"/>
             </div>
-                <div class="form-row d-flex justify-content-between mt-4 mb-2">
-                    <div class="form-group3">
-                        <div class="form-check ml-2">
-                            <input class="form-check-input" type="checkbox" id="basic_checkbox_1"/>
-                            <label class="form-check-label" for="basic_checkbox_1">Recordarme</label>
+                <div className="form-row d-flex justify-content-between mt-4 mb-2">
+                    <div className="form-group3">
+                        <div className="form-check ml-2">
+                            <input className="form-check-input" type="checkbox" id="basic_checkbox_1"/>
+                            <label className="form-check-label" for="basic_checkbox_1">Recordarme</label>
                         </div>
-                        <div class="form-group4">
-                            <a href="page-forgot-password.html">¿Olvidaste tu contraseña?</a>
-                        </div>
-                    </div>
-                    <div class="signup">
-                        <button type="submit" class="signup">Iniciar Sesión</button>
-                    </div>
-                    <div class="new-account">
-                    <div>¿No tienes una cuenta? <Link to = "./page-register.html">Crea una nueva cuenta</Link></div>
-                    
+                        <div className="new-account1">
+                          
                             <GoogleLogin
                                 clientId="817299739432-6f87ik9hus03a3eog8gl959hm29gsgac.apps.googleusercontent.com"
                                 buttonText="Acceder con Google"
                                 onSuccess={responseGoogle}
                                 onFailure={responseGoogle}
                                 cookiePolicy={'single_host_origin'}
-                            /> 
-                    </div>
+                            />
+                            <div className="new-account2">
+                            <button type="submit" className="signup">Iniciar Sesión</button> 
+                            </div>
+                        </div>
+                                              
+                        <div className="form-group">
+                            <div><Link to="page-forgot-password.html">¿Olvidaste tu contraseña?</Link></div>       
+                            <div><Link to = "./page-register.html">Crea una nueva cuenta</Link></div>    
+                        </div>
+                        
+                        
                 </div>
+            </div>
         </body>
         </div>
     </div>                   

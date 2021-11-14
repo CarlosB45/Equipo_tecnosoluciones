@@ -15,16 +15,16 @@
 h2 {
     position: absolute;
     width: 800px;
-    height: 331px;
-    left: 109px;
-    top: 50px;
+    height: 131px;
+    left: 189px;
+    top: 60px;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
-    line-height: 86px;
-    color: #444040;
+    line-height: 60px;
+    color: #aaa8a8;
 }
 
 h3 {
@@ -32,12 +32,12 @@ h3 {
     width: 760px;
     height: 331px;
     left: 1px;
-    top: 40px;
+    top:190px;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 86px;
     color: #FFFFFF;
 }
@@ -156,9 +156,9 @@ h3 {
 a {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 86px;
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 70px;
     color: #CEE3F6;
 }
 
@@ -192,4 +192,111 @@ a {
     top:120px;
     font-family: Montserrat;
     font-size: 12;
+}
+
+.new-account1 {
+    padding:1px;
+    position: absolute;
+    width: 211px;
+    height: 105px;
+    left: 10px;
+    top: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1px;
+    color: #FFFFFF;
+}
+
+.Titulo {
+    position: absolute;
+    width: 760px;
+    height: 331px;
+    left: 300px;
+    top:60px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 86px;
+    color: #FFFFFF;
+}
+
+.new-account2 {
+    padding:1px;
+    position: absolute;
+    width: 211px;
+    height: 105px;
+    left: 10px;
+    top: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1px;
+    color: #FFFFFF;
+}
+
+.form-grouptext {
+
+    padding: 20px;
+    position: absolute;
+    width: 410px;
+    line-height: 10px;
+    left: 300px;
+    top: 500px;
+    font-family: 'Times New Roman', serif;
+    font-size: 12;
+}
+.Newaccounts {
+    padding:1px;
+    position: absolute;
+    width: 211px;
+    height: 105px;
+    left: 10px;
+    top: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1px;
+    color: #FFFFFF;
+}
+
+.forgotpassword {
+    padding:1px;
+    position: absolute;
+    width: 211px;
+    height: 105px;
+    left: 10px;
+    top: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1px;
+    color: #FFFFFF;
+}
+
+.form-group {
+
+    padding: 30px;
+    margin: auto;
+    position: absolute;
+    width: 400px;
+    height: 95px;
+    left: 0px;
+    top: 110px;
+    font-family: 'Calibri';
+    color: white
+}
+
+.form-group4 {
+
+    padding: 30px;
+    margin: auto;
+    position: absolute;
+    width: 400px;
+    height: 95px;
+    left: 0px;
+    top: 175px;
+    font-family: 'Calibri';
+    color: white
 }
