@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, {Component} from "react";
-import 'style/Stylesv.css';
-import imag from 'images/index_img';
-import {Link} from 'react-router-dom';
-
+import {Link, Navlink} from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import '../../style/Styles.css';
+import imag from '../../images/index_img';
 //<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
 function ConsulVendedor(){
@@ -24,21 +24,20 @@ function ConsulVendedor(){
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to="Home"><img src={imag.img_homew} width="30px" height="30px"/><span>Inicio</span></Link>
+                            <Link to="/mod_vendedor/ConsulVendedor" className="active"><img src={imag.img_searchb} width="30px" height="30px" /><span>Consultar Vendedores</span></Link>                            
                         </li>
                         <li>
-                            <Link to="ConsulVendedor" className="active"><img src={imag.img_searchb} width="30px" height="30px" /><span>Consultar Vendedores</span></Link>                            
+                            <Link to="/mod_vendedor/IngreVendedor"><img src={imag.img_savew} width="30px" height="30px"/><span>Crear Vendedores</span></Link>
                         </li>
                         <li>
-                            <Link to="IngreVendedor"><img src={imag.img_savew} width="30px" height="30px"/><span>Crear Vendedores</span></Link>
+                            <Link to="/mod_vendedor/ModVendedor"><img src={imag.img_createw} width="30px" height="30px"/><span>Modificar Vendedores</span></Link>
                         </li>
                         <li>
-                            <Link to="ModVendedor"><img src={imag.img_createw} width="30px" height="30px"/><span>Modificar Vendedores</span></Link>
+                            <Link to="/mod_vendedor/ElimVendedor"><img src={imag.img_deletew} width="30px" height="30px"/><span>Eliminar Vendedores</span></Link>
                         </li>
                         <li>
-                            <Link to="ElimVendedor"><img src={imag.img_deletew} width="30px" height="30px"/><span>Eliminar Vendedores</span></Link>
+                            <Link to="/"><img src={imag.img_homew} width="30px" height="30px"/><span>Inicio</span></Link>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -46,7 +45,7 @@ function ConsulVendedor(){
             <div className="main-content">
                 <header>
                     <div>
-                        <img src={imag.img_logo} width="60px" height="60px"/>
+                        <img src={imag.img_log} width="60px" height="60px"/>
                     </div>
                     <div className="name-company">
                         <h2><span>Tecnosoluciones</span></h2>
