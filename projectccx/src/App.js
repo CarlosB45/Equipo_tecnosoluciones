@@ -1,15 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import { Auth0Provider } from "@auth0/auth0-react";
+import React, { Component } from "react";
+//import logo from './logo.svg';
+import { BrowserRouter, Switch, Route, Link} from "react-router-dom";
+import routes from './config/routes'
+//import { render } from "@testing-library/react";
+//import HolaMundo, { AdiosMundo } from './components/HolaMundo';
 
-ReactDOM.render(
-  <Auth0Provider
-    domain="development-web.us.auth0.com"
-    clientId="eSPZYvuh7RhZAXUwooRNaIXcx9INmou8"
-    redirectUri={window.location.origin}
-  >
-    <App />
-  </Auth0Provider>,
-  document.getElementById("root")
-);
+class App extends Component {
+  render(){
+    const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
+    return (
+      <BrowserRouter>
+        {routeComponents}
+      </BrowserRouter>
+    );
+  }
+}
+
+export default App;
