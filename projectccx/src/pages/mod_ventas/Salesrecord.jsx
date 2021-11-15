@@ -44,7 +44,7 @@ function Salesrecord () {
                 <img src={images.img_logo} width="60px" height="60px" alt=""/>
             </div>
             <div className="name-company">
-                <h2><span>Tecnosoluciones</span></h2>
+                <h1><span>Tecnosoluciones</span></h1>
             </div>
             <div className="user-wrapper">
                 <img src={images.img_user} width="40px" height="40px" alt=""/>
@@ -53,15 +53,7 @@ function Salesrecord () {
             </div>
         </header>
         <main className="main-content">
-            <div className="container"> 
-                <div className="row"> 
-                    <div className="title">
-                        <h2>Registro de ventas</h2>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            
+                     
             <div className="main-container">
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Fecha</label>
