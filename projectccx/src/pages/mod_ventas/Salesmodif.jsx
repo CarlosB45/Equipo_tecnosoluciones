@@ -92,6 +92,10 @@ function Salesmodif () {
                     <label className="labelform justify-content-center">Unidades vendidas</label>
                     <input type="text" className="formscontrol" placeholder="Modifique No. unidades vendidas" required autocomplete></input>
                 </div>
+                <div className="row justify-content-center">
+                    <label className="labelform justify-content-center">Descuento autorizado</label>
+                    <input type="text" className="formscontrol" placeholder="Modifique descuento autorizado" required autocomplete></input>
+                </div>
             </div>
             
             <br/>
