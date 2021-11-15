@@ -85,7 +85,7 @@ function Salesmodif () {
                     <input type="number" className="formscontrol" placeholder="Modifique No. Documento cliente" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Código de producto</label>
+                    <label className="labelform justify-content-center">Producto</label>
                     <input type="number" className="formscontrol" placeholder="Modifique Producto vendido" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
