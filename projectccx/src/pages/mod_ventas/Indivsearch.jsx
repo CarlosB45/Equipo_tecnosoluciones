@@ -87,6 +87,8 @@ function Indivsearch () {
             </div>
         </div>
 
+        <br/>
+
         <div className="main-container">
             <table>
                 <thead>
