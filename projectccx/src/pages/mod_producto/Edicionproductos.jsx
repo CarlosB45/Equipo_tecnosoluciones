@@ -40,7 +40,7 @@ function Edicionproductos () {
                     <img src={images.img_logo} width="60px" height="60px"/>
                 </div>
                 <div className="name-company">
-                    <h2><span>Tecnosoluciones</span></h2>
+                    <div>Tecnosoluciones</div>
                 </div>
                 <div className="user-wrapper">
                     <img src={images.img_user} width="40px" height="40px" alt=""/>
@@ -49,17 +49,43 @@ function Edicionproductos () {
                 </div>
             </header>
             <main>
-                <div className="card">
-                    <div className= "busqueda">
-                        <h4 className="Listado">Busqueda</h4>
-                        <input type="text" className="formscontrols" placeholder= "Nombre del producto"/>
-                        <input type="text" className="formscontrols" placeholder= "Código del producto"/>
-                        <input type="text" className="formscontrols" placeholder= "Referencia del producto"/>
-                        <input type="text" className="formscontrols" placeholder= "Marca del producto"/>
-                        <input type="text" className="formscontrols" placeholder= "Proveedor del producto"/>
-                        <input type="text" className="formscontrols" placeholder= "Lugar de almacenamiento"/>
+                <div className = "main-content">
+            
+    
+            <form id="consul_prod">
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-3">
+                        <h6 className="card-title">Categoria</h6>
+                        <select className="formscontrol-div" id="tipo_categoria">
+                            <option selected disabled>Seleccione...</option>
+                            <option value= "TV">Televisión</option>
+                            <option value= "C">Computador</option>
+                            <option value= "W">SmartWatch</option>
+                            <option value= "J">Juego</option>
+                        </select>
                     </div>
+                    <div className="col-sm-3">
+                        <h6 className="card-title">Nombre del producto:</h6>
+                        <input type="number"  className="formscontrol-div" id="numdoc_vend" placeholder="Nombre del producto"/>
+                    </div>
+                    <div className="col-sm-3">
+                        <h6 className="card-title">Código del producto:</h6>
+                        <input type="text"  className="formscontrol-div" id="nom_vend" placeholder="Código del producto"/>
+                    </div> 
+                                              
+                    <div className="col-sm-3">
+                        <h6 className="card-title">Marca del producto:</h6>
+                        <input type="text"  className="formscontrol-div" id="ent_vend" placeholder="Marca del producto"/>
+                    </div>
+                    <div className="col-sm-3">
+                        <button type="button"  className="btn btn-outline-primary" id="butt_cons_vend">Consultar</button>
+                    </div>
+
                 </div>
+            </div>
+        </form>
+
                 <div className="table-responsive1">
                     <table className="table table-xs">
                         <thead>
@@ -166,6 +192,7 @@ function Edicionproductos () {
                         </tr>
                         </tbody>
                     </table>
+                </div>
                 </div>
             </main>
         </div>

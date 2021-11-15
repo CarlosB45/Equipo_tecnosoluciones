@@ -47,7 +47,7 @@ function vizualizacion () {
                     </div>
 
                     <div class="name-company">
-                       <h2><span>Tecnosoluciones</span></h2>
+                        <div>Tecnosoluciones</div>
                     
                     </div>
 

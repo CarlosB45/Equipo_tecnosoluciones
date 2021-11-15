@@ -44,7 +44,7 @@ function Editproduct () {
                     <img src="../img/logo.png" width="60px" height="60px"/>
                 </div>
                 <div className="name-company">
-                    <h2><span>Tecnosoluciones</span></h2>
+                    <div>Tecnosoluciones</div>
                 </div>
                 <div className="user-wrapper">
                     <img src="../img/icon/user.png" width="40px" height="40px" alt=""/>

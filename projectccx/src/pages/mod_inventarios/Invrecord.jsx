@@ -11,7 +11,7 @@ function Invrecord () {
         <input type="checkbox" id="nav-toggle"></input>
         <div className="sidebar">
             <div className="sidebar-brand">
-                <h2><span className="Inventario"></span> <span>Inventario</span></h2>
+                <div className="Inventario">Inventarios</div>
             </div>
             <div className="sidebar-menu">
                 <li>
@@ -38,7 +38,7 @@ function Invrecord () {
                 <img src={images.img_logo} width="60px" height="60px" alt=""/>
             </div>
             <div className="name-company">
-                <h2><span>Tecnosoluciones</span></h2>
+                <div>Tecnosoluciones</div>
             </div>
             <div className="user-wrapper">
                 <img src={images.img_user} width="40px" height="40px" alt=""/>
@@ -53,7 +53,7 @@ function Invrecord () {
             <div className="container"> 
                 <div className="row"> 
                     <div className="title">
-                        <h2>Registro de inventario</h2>
+                        <div>Registro de inventario</div>
                     </div>
                 </div>
             </div>
@@ -76,14 +76,11 @@ function Invrecord () {
                 </div>
                 
                 <div className="row justify-content-center">
-                    <div className="text-center">
                         <form action="#">
-                            <div className="form-group">
                                 <label className="labelform justify-content-center">Fecha de recepción</label>
                                 <input type="datetime-local" className="formscontrol"></input>
-                            </div>
+                        
                         </form>
-                    </div>
                 </div>
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Marca</label>
@@ -100,12 +97,6 @@ function Invrecord () {
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Novedades</label>
                     <input type="text" className="formscontrol" placeholder="Ingrese cualquier novedad que se presente con este lote" required autocomplete></input>
-                </div>
-                <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Imagen del producto</label>
-                    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                        <button type="button" onclick= "aceptar();" className="btn btn-outline-primary" id="butt_cons_vend">Cargar imagen</button>
-                    </div>
                 </div>
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Almacenamiento</label>

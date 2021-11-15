@@ -38,7 +38,7 @@ function Registerproduct () {
                     <img src={images.img_logo} width="60px" height="60px"/>
                 </div>
                 <div className="name-company">
-                    <h2><span>Tecnosoluciones</span></h2>
+                 <div>Tecnosoluciones</div>
                 </div>
                 <div className="user-wrapper">
                     <img src={images.img_user} width="40px" height="40px" alt=""/>
@@ -56,7 +56,7 @@ function Registerproduct () {
                         <option value= "C">Computador</option>
                         <option value= "TV">Televisor</option>
                         <option value= "W">SmartWatch</option>
-                        <option value= "AC">Accesorios</option>
+                        <option value= "J">Juegos</option>
                     </select>
                 </div>
                 <div className="field">

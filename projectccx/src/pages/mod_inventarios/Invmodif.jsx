@@ -38,7 +38,7 @@ function Invmodif () {
                 <img src={images.img_logo} width="60px" height="60px" alt=""/>
             </div>
             <div className="name-company">
-                <h2><span>Tecnosoluciones</span></h2>
+                <div>Tecnosoluciones</div>
             </div>
             <div className="user-wrapper">
                 <img src={images.img_user} width="40px" height="40px" alt=""/>
@@ -80,12 +80,7 @@ function Invmodif () {
                     <label className="labelform justify-content-center">Almacenamiento</label>
                     <input type="text" className="formscontrol" placeholder="Modifique ubicación final del lote" required autocomplete></input>
                 </div>
-                <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Imagen del producto</label>
-                    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                        <button type="button" onclick= "aceptar();" className="btn btn-outline-primary" id="butt_cons_vend">Cargar imagen</button>
-                    </div>
-                </div>
+                
                 <br/>
                 <div className="row justify-content-center">
                     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>

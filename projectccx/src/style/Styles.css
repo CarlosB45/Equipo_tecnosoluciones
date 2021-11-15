@@ -36,7 +36,7 @@
 
 .sidebar-brand {
     height: 120px;
-    padding: 4rem 20rem 1rem 2rem;
+    padding: 4rem 10rem 1rem 2rem;
     color: #fff;
 }
 
@@ -64,6 +64,8 @@
 
 .name-company{
     margin: auto;
+    top:20px;
+    font-size: 40px;
 }
 .sidebar-menu a {
     padding-left: 1rem;
@@ -81,7 +83,7 @@
 }
 
 .sidebar-menu a span:first-child {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-right: 1rem;
 }
 
@@ -747,10 +749,10 @@ td img{
 
 .busqueda {
     width: 1000px;
-    height: 20z0px;
-    padding: 20px 2rem;
+    height: 200px;
+    padding: 20px 20rem;
     display: inline-block;
-    margin-left: 1%;
+    margin-left: 100%;
     margin-right: 100%;
 }
 
@@ -840,9 +842,9 @@ td img{
 }
 
 .table-responsive1 {
-    width: 145%;
+    width: 130%;
     overflow-x: auto;
-    padding: 20px 21rem;
+    padding: 20px 0rem;
 }
 
 

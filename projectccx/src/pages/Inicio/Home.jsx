@@ -12,7 +12,7 @@ function Home (){
         <div className = "Home">
             <div className="sidebar">
                 <div className="sidebar-brand">
-                    <h2><span className="Inventario"></span> <span>Administración de inventarios</span></h2>
+                    <div className="Inventario"> </div>
                 </div>
 
                 <div className="sidebar-menu">
@@ -53,7 +53,7 @@ function Home (){
                     </div>
 
                     <div className="name-company">
-                        <h2><span>Tecnosoluciones</span></h2>
+                        <div><span>Tecnosoluciones</span></div>
                     </div>
 
                     <div className="user-wrapper">

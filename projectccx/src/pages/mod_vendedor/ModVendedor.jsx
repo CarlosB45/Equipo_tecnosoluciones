@@ -49,7 +49,7 @@ function ConsulVendedor(){
                         <img src={imag.img_logo} width="60px" height="60px"/>
                     </div>
                     <div className="name-company">
-                        <h2><span>Tecnosoluciones</span></h2>
+                        <div>Tecnosoluciones</div>
                     </div>
                     <div className="user-wrapper">
                         <img src={imag.img_user} width="40px" height="40px" />
