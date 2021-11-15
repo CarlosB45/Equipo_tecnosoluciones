@@ -9,10 +9,9 @@ function Indivsearch () {
     return(
         <>
         <div>
-        <input type="checkbox" id="nav-toggle"></input>
         <div className="sidebar">
             <div className="sidebar-brand">
-                <h2><span className="Inventario"></span> <span>Ventas</span></h2>
+                <h4><span className="Inventario"></span> <span>Ventas</span></h4>
             </div>
             <div className="sidebar-menu">
                 <ul>
