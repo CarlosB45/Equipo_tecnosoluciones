@@ -18,28 +18,28 @@ function Home (){
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to="Home"><img src={images.img_homeb} /><span className="home"></span>
+                            <Link to="/inicio/Home"><img src={images.img_homeb} /><span className="home"></span>
                             <span>Inicio</span></Link>
                         </li>
 
                         <li>
-                            <Link to ="Registerproduct"><img src={images.img_storew} /><span className="product"></span>
+                            <Link to ="/mod_producto/Registerproduct"><img src={images.img_storew} /><span className="product"></span>
                             <span>Productos</span></Link>
                         </li>
                         <li>
-                            <Link to ="Invrecord"><img src={images.img_inventoryw} /><span className="product"></span>
+                            <Link to ="/mod_inventarios/Invrecord"><img src={images.img_inventoryw} /><span className="product"></span>
                             <span>Inventarios</span></Link>
                         </li>
                         <li>
-                            <Link to="ConsulVendedor"><span className="salesman"><img src={images.img_users} /></span>
+                            <Link to="/mod_vendedor/ConsulVendedor"><span className="salesman"><img src={images.img_users} /></span>
                             <span>Comerciales</span></Link>
                         </li>
                         <li>
-                            <Link to="Inquirysales"><img src={images.img_sales} /><span className="stock"></span>
+                            <Link to="/mod_ventas/Inquirysales"><img src={images.img_sales} /><span className="stock"></span>
                             <span>Ventas</span></Link>
                         </li>
                         <li>
-                            <Link to="./Vizualizacion"><img src={images.img_addcirclew} alt=""/><span class="users"></span>
+                            <Link to="/mod_usuario/Vizualizacion"><img src={images.img_addcirclew} alt=""/><span class="users"></span>
                             <img src={images.img_manageaccountw} width="30px" height="30px"/>Gestión de usuarios</Link>
                         </li>
                     </ul>

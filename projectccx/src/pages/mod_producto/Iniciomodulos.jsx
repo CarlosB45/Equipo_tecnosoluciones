@@ -16,47 +16,47 @@ function Iniciomodulos () {
                  <div class="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to ="Home" ><span className="home"><img src= {images.img_homew}/></span>
+                            <Link to ="/inicio/Home" ><span className="home"><img src= {images.img_homew}/></span>
                             <span>Inicio</span></Link>
                         </li>
                         <li class="list__item list__item--click">
                             <div class="list__button list__button--click">
-                                <Link to="Registerproduct" class="nav__link"><img src={images.img_storew} />Productos</Link>
+                                <Link to="/mod_producto/Registerproduct" class="nav__link"><img src={images.img_storew} />Productos</Link>
                                 <img src={images.img_arrowdropdown} class="list__arrow"/>
                             </div>
 
                             <ul class="list__show">
                                 <li class="list__inside">
-                                    <Link to="Registerproduct" class="nav__link nav__link--inside">Registro de productos</Link>
+                                    <Link to="/mod_producto/Registerproduct" class="nav__link nav__link--inside">Registro de productos</Link>
                                 </li>
 
                                 <li class="list__inside">
-                                    <Link to="Listproducts" class="nav__link nav__link--inside">Información de productos</Link>
+                                    <Link to="/mod_producto/Listproducts" class="nav__link nav__link--inside">Información de productos</Link>
                                 </li>
                                 <li class="list__inside">
-                                    <Link to="Edicionproducts" class="nav__link nav__link--inside">Edición de productos</Link>
+                                    <Link to="/mod_producto/Edicionproducts" class="nav__link nav__link--inside">Edición de productos</Link>
                                 </li>
                             </ul>
                         </li>
                         <li class="list__item list__item--click">
                             <div class="list__button list__button--click">
-                                <Link to="Inquiryinv" class="nav__link"><img src={images.img_inventoryw} />Inventario</Link>
+                                <Link to="/mod_inventarios/Inquiryinv" class="nav__link"><img src={images.img_inventoryw} />Inventario</Link>
                                 <img src={images.img_arrowdropdown} class="list__arrow"/>
                             </div>
 
                         <ul class="list__show">
                             <li class="list__inside">
-                                <Link to="Inquiryinv" class="nav__link nav__link--inside">Registro de Inventario</Link>
+                                <Link to="/mod_inventarios/Inquiryinv" class="nav__link nav__link--inside">Registro de Inventario</Link>
                             </li>
 
                             <li class="list__inside">
-                                <Link to="Invrecord" class="nav__link nav__link--inside">Almacenamiento de productos</Link>
+                                <Link to="/mod_inventarios/Invrecord" class="nav__link nav__link--inside">Almacenamiento de productos</Link>
                             </li>
                         </ul>
                         </li>
                         <li class="list__item list__item--click">
                             <div class="list__button list__button--click">
-                                <Link to="Home" class="nav__link"><img src={images.img_return}/>Volver</Link>
+                                <Link to="/inicio/Home" class="nav__link"><img src={images.img_return}/>Volver</Link>
                            </div>
                         </li>
                     </ul>

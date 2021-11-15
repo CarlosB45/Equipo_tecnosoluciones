@@ -16,23 +16,23 @@ function vizualizacion () {
               <div className="sidebar-menu">
                   <ul>
                     <li>
-                       <Link to="Home"><img src={images.img_homew} /><span class="home"></span>
+                       <Link to="/inicio/Home"><img src={images.img_homew} /><span class="home"></span>
                        <span>Inicio</span></Link>
                     </li>
                     <li>
-                       <Link to="Vizualizacion" class="active"><img src={images.img_tableviewb} /><span class="home"></span>
+                       <Link to="/mod_usuario/Vizualizacion" class="active"><img src={images.img_tableviewb} /><span class="home"></span>
                        <span>Visualizacion</span></Link>
                     </li>
                     <li>
-                       <Link to="Create" ><img src={images.img_addcirclew} /><span class="product"></span>
+                       <Link to="/mod_usuario/Create" ><img src={images.img_addcirclew} /><span class="product"></span>
                        <span>Creación</span></Link>
                     </li>
                     <li>
-                       <Link to="Modification"><img src={images.img_editw} /><span class="salesman"></span>
+                       <Link to="/mod_usuario/Modification"><img src={images.img_editw} /><span class="salesman"></span>
                        <span>Modificacón</span></Link>
                     </li>
                     <li>
-                       <Link to="Remove"><img src={images.img_deletew} /><span class="stock"></span>
+                       <Link to="/mod_usuario/Remove"><img src={images.img_deletew} /><span class="stock"></span>
                        <span>Eliminación</span></Link>
                     </li>
                     
@@ -146,9 +146,9 @@ function vizualizacion () {
                             </tr>
                         </tbody>
                     </table>
-                    <Link to="Create"><button type="submit" class="btn btn-primary">Añadir usuario</button></Link>
-                    <Link to="Modification"><button type="submit" class="btn btn-primary">Modificar usuario</button></Link>
-                    <Link to="Remove"><button type="submit" class="btn btn-primary">Eliminar usuario</button></Link>
+                    <Link to="/mod_usuario/Create"><button type="submit" class="btn btn-primary">Añadir usuario</button></Link>
+                    <Link to="/mod_usuario/Modification"><button type="submit" class="btn btn-primary">Modificar usuario</button></Link>
+                    <Link to="/mod_usuario/Remove"><button type="submit" class="btn btn-primary">Eliminar usuario</button></Link>
                 </main>
 
             </div>

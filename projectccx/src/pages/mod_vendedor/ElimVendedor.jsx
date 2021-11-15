@@ -25,6 +25,9 @@ function ConsulVendedor(){
                 <div className="sidebar-menu">
                     <ul>
                         <li>
+                            <Link to="/inicio/Home"><img src={imag.img_homew} width="30px" height="30px"/><span>Inicio</span></Link>
+                        </li>                        
+                        <li>
                             <Link to="/mod_vendedor/ConsulVendedor"><img src={imag.img_searchw} width="30px" height="30px" /><span>Consultar Vendedores</span></Link>
                         </li>
                         <li>
@@ -36,9 +39,7 @@ function ConsulVendedor(){
                         <li>
                             <Link to="/mod_vendedor/ElimVendedor" className="active"><img src={imag.img_deleteb} width="30px" height="30px"/><span>Eliminar Vendedores</span></Link>
                         </li>
-                        <li>
-                            <Link to="/"><img src={imag.img_homew} width="30px" height="30px"/><span>Inicio</span></Link>
-                        </li>
+
                     </ul>
                 </div>
             </div>

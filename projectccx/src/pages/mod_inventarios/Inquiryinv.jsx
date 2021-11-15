@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link, Navlink} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'style/Styles.css';
 import images from 'images/index_img';
@@ -16,20 +17,20 @@ function Inquiryinv () {
             </div>
             <div className="sidebar-menu">
                 <li>
-                    <a href="Home" className="product">
-                    <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></a>
+                    <Link to="/inicio/Home">
+                    <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
                 </li>
                 <li>
-                    <a href= "Invrecord"className="product"><span className="product"></span>
-                    <img src={images.img_savew} width="30px" height="30px" alt=""/>Registro de inventario</a>
+                    <Link to="/mod_inventarios/Invrecord">
+                    <img src={images.img_savew} width="30px" height="30px" alt=""/>Registro de inventario</Link>
                 </li>
                 <li>
-                    <a href="Invmodif"><span className="product"></span>
-                    <img src={images.img_editw} width="30px" height="30px" alt=""/>Modificación de inventario</a>
+                    <Link to="/mod_inventarios/Invmodif">
+                    <img src={images.img_editw} width="30px" height="30px" alt=""/>Modificación de inventario</Link>
                 </li>
                 <li>
-                    <a href=  "InquiryInv" className="active"><span className="home"></span>
-                    <img src={images.img_searchb} width="30px" height="30px" alt=""/>Consulta de Inventario</a>
+                    <Link to="/mod_inventarios/InquiryInv" className="active">
+                    <img src={images.img_searchb} width="30px" height="30px" alt=""/>Consulta de Inventario</Link>
                 </li>
             </div>
         </div>

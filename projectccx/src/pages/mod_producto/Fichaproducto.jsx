@@ -15,24 +15,24 @@ function Fichaproductos () {
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to ="Home" ><span className="home"><img src= {images.img_homew}/></span>
+                            <Link to ="/inicio/Home" ><span className="home"><img src= {images.img_homew}/></span>
                             <span>Inicio</span></Link>
                         </li>
                         <li>
-                            <Link to="Registerproduct" ><span className="product"></span>
+                            <Link to="/mod_producto/Registerproduct" ><span className="product"></span>
                             <span>Registro de productos</span></Link>
                         </li>
                         <li>
-                            <Link to="Listproducts" className="active"><span className="salesman"></span>
+                            <Link to="/mod_producto/Listproducts" className="active"><span className="salesman"></span>
                             <span>Información de productos</span></Link>
                         </li>
                         <li>
-                            <Link to="Edicionproductos"><span className="stock"></span>
+                            <Link to="/mod_producto/Edicionproductos"><span className="stock"></span>
                             <span>Edición de productos</span></Link>
                         </li>
                         <li className="list__item list__item--click">
                             <div className="list__button list__button--click">
-                                <Link to="Iniciomodulos" className="nav__link">Volver</Link>
+                                <Link to="/mod_producto/Iniciomodulos" className="nav__link">Volver</Link>
                                 <img src="images.img_returnw" className="list__return"/>
                             </div>
                         </li>

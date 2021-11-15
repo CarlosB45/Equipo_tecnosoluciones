@@ -17,23 +17,23 @@ function Inquirysales () {
             <div className="sidebar-menu">
                 <ul>
                     <li>
-                        <Link to="Home" className="product"><span className="product"></span>
+                        <Link to="/inicio/Home" className="product"><span className="product"></span>
                         <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
                     </li>
                     <li>
-                        <Link to="Inquirysales" className="active"><span className="home"></span>
+                        <Link to="/mod_ventas/Inquirysales" className="active"><span className="home"></span>
                         <img src={images.img_searchb} width="30px" height="30px" alt=""/>Consulta de ventas</Link>
                     </li>
                     <li>
-                        <Link to="Salesrecord" className="product"><span className="product"></span>
+                        <Link to="/mod_ventas/Salesrecord" className="product"><span className="product"></span>
                         <img src={images.img_savew} width="30px" height="30px" alt=""/>Registro de ventas</Link>
                     </li>
                     <li>
-                        <Link to="Indivsearch"><span className="product"></span>
+                        <Link to="/mod_ventas/Indivsearch"><span className="product"></span>
                         <img src={images.img_searchw} width="30px" height="30px" alt=""/>Consulta Individual</Link>
                     </li>
                     <li>
-                        <Link to="Salesmodif"><span className="salesman"></span>
+                        <Link to="/mod_ventas/Salesmodif"><span className="salesman"></span>
                         <img src={images.img_createw} width="30px" height="30px" alt=""/>Modificación de ventas</Link>
                     </li>
                 </ul>

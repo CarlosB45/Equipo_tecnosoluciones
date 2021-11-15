@@ -39,23 +39,23 @@ abrirmodal=()=>{
               <div className="sidebar-menu">
                   <ul>
                     <li>
-                       <Link to="Home"><img src={images.img_homew} /><span className="home"></span>
+                       <Link to="/inicio/Home"><img src={images.img_homew} /><span className="home"></span>
                        <span>Inicio</span></Link>
                     </li>
                     <li>
-                       <Link to="Vizualizacion"><img src={images.img_tableview} /><span className="home"></span>
+                       <Link to="/mod_usuario/Vizualizacion"><img src={images.img_tableview} /><span className="home"></span>
                        <span>Visualizacion</span></Link>
                     </li>
                     <li>
-                       <Link to="Create"><img src={images.img_addcirclew} /><span className="product"></span>
+                       <Link to="/mod_usuario/Create"><img src={images.img_addcirclew} /><span className="product"></span>
                        <span>Creación</span></Link>
                     </li>
                     <li>
-                       <Link to="Modification" className="active"><img src={images.img_editb} /><span className="salesman"></span>
+                       <Link to="/mod_usuario/Modification" className="active"><img src={images.img_editb} /><span className="salesman"></span>
                        <span>Modificación</span></Link>
                     </li>
                     <li>
-                       <Link to="Remove"><img src={images.img_deletew} /><span className="stock"></span>
+                       <Link to="/mod_usuario/Remove"><img src={images.img_deletew} /><span className="stock"></span>
                        <span>Eliminación</span></Link>
                     </li>
                    

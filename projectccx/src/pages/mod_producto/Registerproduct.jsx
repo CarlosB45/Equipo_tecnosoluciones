@@ -15,19 +15,19 @@ function Registerproduct () {
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to ="Home" ><span className="home"><img src= {images.img_homew}/></span>
+                            <Link to ="/inicio/Home" ><span className="home"><img src= {images.img_homew}/></span>
                             <span>Inicio</span></Link>
                         </li>
                         <li>
-                            <Link to="Registerproduct" className="active"><img src= {images.img_addcircleb}/><span className="product"></span>
+                            <Link to="/mod_producto/Registerproduct" className="active"><img src= {images.img_addcircleb}/><span className="product"></span>
                             <span>Registro de productos</span></Link>
                         </li>
                         <li>
-                            <Link to="Listproducts"><span className="salesman"><img src= {images.img_searchw}/></span>
+                            <Link to="/mod_producto/Listproducts"><span className="salesman"><img src= {images.img_searchw}/></span>
                             <span>Información de productos</span></Link>
                         </li>
                         <li>
-                            <Link to="Edicionproductos"><span className="stock"><img src= {images.img_editw}/></span>
+                            <Link to="/mod_producto/Edicionproductos"><span className="stock"><img src= {images.img_editw}/></span>
                             <span>Edición de productos</span></Link>
                         </li>
                     </ul>

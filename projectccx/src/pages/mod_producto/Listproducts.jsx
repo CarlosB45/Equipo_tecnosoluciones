@@ -16,19 +16,19 @@ function Listproducts () {
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <Link to ="Home" ><span className="home"><img src= {images.img_homew}/></span>
+                            <Link to ="/inicio/Home" ><span className="home"><img src= {images.img_homew}/></span>
                             <span>Inicio</span></Link>
                         </li>
                         <li>
-                            <Link to="./Registerproduct" ><span className="product"><img src= {images.img_addcirclew}/></span>
+                            <Link to="/mod_producto/Registerproduct" ><span className="product"><img src= {images.img_addcirclew}/></span>
                             <span>Registro de productos</span></Link>
                         </li>
                         <li>
-                            <Link to="./Listproducts" className="active"><span className="salesman"><img src= {images.img_searchb}/></span>
+                            <Link to="/mod_producto/Listproducts" className="active"><span className="salesman"><img src= {images.img_searchb}/></span>
                             <span>Información de productos</span></Link>
                         </li>
                         <li>
-                            <Link to="./Edicionproductos"><span className="stock"><img src= {images.img_editw}/></span>
+                            <Link to="/mod_producto/Edicionproductos"><span className="stock"><img src= {images.img_editw}/></span>
                             <span>Edición de productos</span></Link>
                         </li>
                     </ul>
@@ -88,7 +88,7 @@ function Listproducts () {
                                     <td> $ 4.599.900</td>
                                     <td>Electronic S.A</td>
                                     <td>Bodega de Seguridad 1</td>
-                                    <td><Link to="Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
+                                    <td><Link to="/mod_producto/Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
@@ -99,7 +99,7 @@ function Listproducts () {
                                     <td>2799900</td>
                                     <td>Semic S.A.S</td>
                                     <td>Bodega de Seguridad 1</td>
-                                    <td><Link to="Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
+                                    <td><Link to="/mod_producto/Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
@@ -110,7 +110,7 @@ function Listproducts () {
                                     <td>2349900</td>
                                     <td>Electronic S.A</td>
                                     <td>Bodega de Seguridad 1</td>
-                                    <td><Link to="Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
+                                    <td><Link to="/mod_producto/Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
 
                                 </tr>
                                 <tr>
@@ -122,7 +122,7 @@ function Listproducts () {
                                     <td>3329900</td>
                                     <td>Semic S.A.S</td>
                                     <td>Bodega de Seguridad 2</td>
-                                    <td><Link to="Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
+                                    <td><Link to="/mod_producto/Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
 
                                 </tr>
                                 <tr>
@@ -134,7 +134,7 @@ function Listproducts () {
                                     <td>3559000</td>
                                     <td>Electronic S.A</td>
                                     <td>Bodega de Seguridad 2</td>
-                                    <td><Link to="Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
+                                    <td><Link to="/mod_producto/Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
 
                                 </tr>
                                 <tr>
@@ -146,7 +146,7 @@ function Listproducts () {
                                     <td>649900</td>
                                     <td>Maiket</td>
                                     <td>Bodega de Seguridad 3</td>
-                                    <td><Link to="Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
+                                    <td><Link to="/mod_producto/Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
 
                                 </tr>
 
@@ -159,7 +159,7 @@ function Listproducts () {
                                     <td>1139900</td>
                                     <td>Electronic S.A</td>
                                     <td>Bodega de Seguridad 3</td>
-                                    <td><Link to="Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
+                                    <td><Link to="/mod_producto/Fichaproducto"> <img src={images.img_visibilityb}/></Link></td>
 
                                 </tr>
                             </tbody>
