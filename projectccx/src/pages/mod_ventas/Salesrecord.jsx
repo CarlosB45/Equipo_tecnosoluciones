@@ -8,10 +8,9 @@ function Salesrecord () {
     return(
         <>
         <div>
-        <input type="checkbox" id="nav-toggle"></input>
         <div className="sidebar">
             <div className="sidebar-brand">
-                <h2><span className="Inventario"></span> <span>Ventas</span></h2>
+                <h4><span className="Inventario"></span> <span>Ventas</span></h4>
             </div>
             <div className="sidebar-menu">
                 <ul>
@@ -64,6 +63,16 @@ function Salesrecord () {
             <br/>
             
             <div className="main-container">
+                <div className="row justify-content-center">
+                    <label className="labelform justify-content-center">Fecha</label>
+                    <div className="box-button">
+                        <div className="text-center">
+                            <form action="#">
+                                Periodo: <input type="month" placeholder="mes (MM)" class="formscontrol" id="periodo"></input>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">No. Documento Cliente</label>
                     <input type="number" className="formscontrol" placeholder="Ingrese No. Documento cliente" required autocomplete></input>
