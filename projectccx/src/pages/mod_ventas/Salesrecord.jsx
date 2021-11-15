@@ -73,8 +73,8 @@ function Salesrecord () {
                     <input type="text" className="formscontrol" placeholder="Registre Producto" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
-                    <label className="labelform justify-content-center">Código de producto</label>
-                    <input type="text" className="formscontrol" placeholder="Código de producto" required autocomplete></input>
+                    <label className="labelform justify-content-center">Código de Venta</label>
+                    <input type="text" className="formscontrol" placeholder="Código de venta" required autocomplete></input>
                 </div>
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">Descuento</label>
@@ -83,6 +83,10 @@ function Salesrecord () {
                 <div className="row justify-content-center">
                     <label className="labelform justify-content-center">No. Unidades vendidas</label>
                     <input type="number" className="formscontrol" placeholder="Registre No. unidades vendidas" required autocomplete></input>
+                </div>
+                <div className="row justify-content-center">
+                    <label className="labelform justify-content-center">Valor Total</label>
+                    <input type="number" className="formscontrol" placeholder="Valor Total" required autocomplete></input>
                 </div>
             </div>
             
