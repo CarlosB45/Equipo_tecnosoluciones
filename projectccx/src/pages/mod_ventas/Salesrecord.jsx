@@ -16,8 +16,8 @@ function Salesrecord () {
             <div className="sidebar-menu">
                 <ul>
                     <li>
-                        <Link to="/inicio/Home" className="product">
-                        <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
+                        <Link to="/inicio/Home">
+                        <img src={images.img_homew} width="30px" height="30px" alt=""/>Inicio</Link>
                     </li>
                     <li>
                         <Link to="/mod_ventas/Inquirysales" className="product">

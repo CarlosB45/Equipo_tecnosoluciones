@@ -39,8 +39,8 @@ const routes = [{
     path: var_path.path_mp_Listproducts,
     component: var_rout.rout_mp_Listproducts,
   }, {
-    path: '/',
-    component: var_rout.rout_mv_indexVendedor,
+    path: var_path.path_mp_Registerproduct,
+    component: var_rout.rout_mp_Registerproduct,
   },  {
 
   //Modulo usuario

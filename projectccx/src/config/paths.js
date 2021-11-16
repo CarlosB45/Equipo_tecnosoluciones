@@ -81,9 +81,9 @@ export const var_path = {
     "path_in_Register"                 : '/inicio/Register',
 
     //Modulo Inventarios
-    "path_mi_Inquiryinv"               : '/mod_inventarios/mi_Inquiryinv',
-    "path_mi_Invmodif"                 : '/mod_inventarios/mi_Invmodif',
-    "path_mi_Invrecord"                : '/mod_inventarios/mi_Invrecord',    
+    "path_mi_Inquiryinv"               : '/mod_inventarios/Inquiryinv',
+    "path_mi_Invmodif"                 : '/mod_inventarios/Invmodif',
+    "path_mi_Invrecord"                : '/mod_inventarios/Invrecord',    
 
     //Modulo productos
     "path_mp_Edicionproductos"         : '/mod_producto/Edicionproductos',
@@ -91,13 +91,14 @@ export const var_path = {
     "path_mp_Fichaproducto"            : '/mod_producto/Fichaproducto',
     "path_mp_Iniciomodulos"            : '/mod_producto/Iniciomodulos',
     "path_mp_Listproducts"             : '/mod_producto/Listproducts',
-    
+    "path_mp_Registerproduct"          : '/mod_producto/Registerproduct',
+
     //Modulo Usuario
     "path_mu_Create"                   : '/mod_usuario/Create',
     "path_mu_Modification"             : '/mod_usuario/Modification',
     "path_mu_Remove"                   : '/mod_usuario/Remove',
     "path_mu_Vizualizacion"            : '/mod_usuario/Vizualizacion',
-
+    
     //Modulo vendedor
     "path_mv_ConsulVendedor"           : '/mod_vendedor/ConsulVendedor',
     "path_mv_IngreVendedor"            : '/mod_vendedor/IngreVendedor',

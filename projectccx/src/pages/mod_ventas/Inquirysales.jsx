@@ -17,7 +17,7 @@ function Inquirysales () {
             <div className="sidebar-menu">
                 <ul>
                     <li>
-                        <Link to="/inicio/Home" className="product"><span className="product"></span>
+                        <Link to="/inicio/Home"><span className="product"></span>
                         <img src={images.img_homew} width="30px" height="30px" alt=""/><span>Inicio</span></Link>
                     </li>
                     <li>
