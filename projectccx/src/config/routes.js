@@ -13,14 +13,14 @@ const routes = [{
   }, {
   
   //Modulo Inventarios
-    path: var_path.path_in_Home,
-    component: var_rout.rout_in_Home,
+    path: var_path.path_mi_Inquiryinv,
+    component: var_rout.rout_mi_Inquiryinv,
   }, {
-    path: var_path.path_in_Login,
-    component: var_rout.rout_in_Login,
+    path: var_path.path_mi_Invmodif,
+    component: var_rout.rout_mi_Invmodif,
   }, {
-    path: var_path.path_in_Register,
-    component: var_rout.rout_in_Register,
+    path: var_path.path_mi_Invrecord,
+    component: var_rout.rout_mi_Invrecord,
   }, {
 
   //Modulo productos
