@@ -10,7 +10,6 @@ import Login from './pages/Inicio/Login';
 import Edicionproductos from './pages/mod_producto/Edicionproductos';
 import Editproduct from 'pages/mod_producto/Editproduct';
 import Fichaproducto from 'pages/mod_producto/Fichaproducto';
-import Iniciomodulo from 'pages/mod_producto/Iniciomodulos';
 import Inquiryinv from 'pages/mod_inventarios/Inquiryinv';
 import Invmodif from 'pages/mod_inventarios/Invmodif';
 import Invrecord from 'pages/mod_inventarios/Invrecord';
@@ -41,7 +40,6 @@ const App = () => (
           <Route exact path = "/Edicionproductos" component ={Edicionproductos}/>
           <Route exact path = "/Editproduct" component ={Editproduct}/>
           <Route exact path = "/Fichaproducto" component ={Fichaproducto}/>
-          <Route exact path = "/Iniciomodulos" component ={Iniciomodulo}/>
           <Route exact path = "/Inquiryinv" component ={Inquiryinv}/>
           <Route exact path = "/Invmodif" component ={Invmodif}/>
           <Route exact path = "/Invrecord" component ={Invrecord}/>
